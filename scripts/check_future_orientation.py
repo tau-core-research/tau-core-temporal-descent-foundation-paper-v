@@ -49,6 +49,8 @@ fenchel_gap = sp.simplify(h * v**2 / 2 + eta**2 / (2 * h) - eta * v)
 assert sp.simplify(fenchel_gap - h * (v - eta / h)**2 / 2) == 0
 assert ledger["proved"]["ctc_p1_closes_local_handoff_conditionally"] is True
 assert ledger["proved"]["current_reduct_entails_ctc_p1"] is False
+assert ledger["temporal_mvp_selection"] == "adopts_CTC_P1_as_the_single_enriched_parent_selection_law"
+assert ledger["neutral_tau_over_gr_prediction"] == 0
 assert ledger["joint_character_weights"] == {
     "length": 1,
     "clock": 1,

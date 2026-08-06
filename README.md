@@ -45,6 +45,12 @@ closes the coefficient-free handoff conditionally. The current reduct does not
 entail `CTC-P1`; physical ownership of that enriched response role is now the
 single local source blocker.
 
+The paper closes that model-selection fork by adopting `CTC-P1` as the single
+selection law of the minimum-viable enriched temporal completion. This is an
+explicit physical postulate, not a theorem of the frozen reduct. The resulting
+local clock terminal is complete, uses one operational SI anchor, and predicts
+exactly zero Tau-over-GR excess on the neutral VEP/GR leaf.
+
 ## Does Not Claim
 
 The package does not prove that Nature selects the required clock form, recover

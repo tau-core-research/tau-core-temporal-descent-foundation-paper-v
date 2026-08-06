@@ -27,8 +27,9 @@ def test_claim_boundaries_and_markers():
     assert "Conditional common clock--flow packet and two-sign no-go" in tex
     assert "Diagonal-orientation descent" in tex
     assert "Contact cotangent completeness, CTC-P1" in tex
+    assert "Temporal MVP selection law" in tex
     assert "present seed scalar cannot be renamed" in tex
-    assert "Physical CTC ownership and absolute charge preference" in tex
+    assert "CTC ownership in the temporal MVP" in tex
     assert "observed Tau signal" not in tex
 
 def test_ledger():
@@ -47,6 +48,8 @@ def test_future_orientation_ledger():
     assert data["proved"]["diagonal_global_Z2_is_clock_terminal_null"] is True
     assert data["proved"]["ctc_p1_closes_local_handoff_conditionally"] is True
     assert data["proved"]["current_reduct_entails_ctc_p1"] is False
+    assert data["temporal_mvp_selection"] == "adopts_CTC_P1_as_the_single_enriched_parent_selection_law"
+    assert data["neutral_tau_over_gr_prediction"] == 0
 
 def test_arxiv_archive_is_source_only():
     with zipfile.ZipFile(ROOT / "arxiv_submission_source.zip") as archive:

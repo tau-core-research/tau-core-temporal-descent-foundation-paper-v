@@ -23,6 +23,9 @@
   "seed_orientation_status": "current_seed_occupancy_label_is_permutation_trivial_and_cannot_supply_the_causal_sign_representation",
   "clock_terminal_orientation_status": "common_relative_orientation_modulo_diagonal_Z2_is_sufficient_absolute_charge_preference_not_required",
   "ctc_status": "uniquely_closes_the_local_coefficient_free_handoff_inside_the_declared_one_copy_quadratic_contact_class_but_is_not_entailed_by_the_current_reduct",
+  "temporal_mvp_selection": "adopts_CTC_P1_as_the_single_enriched_parent_selection_law",
+  "neutral_tau_over_gr_prediction": 0,
+  "absolute_si_unit_status": "one_operational_calibration_anchor",
   "joint_character_weights": {
     "length": 1,
     "clock": 1,
