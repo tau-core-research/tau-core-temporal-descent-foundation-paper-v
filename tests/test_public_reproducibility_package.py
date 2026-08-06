@@ -25,8 +25,10 @@ def test_claim_boundaries_and_markers():
     assert "Localized complex-phase clock carrier" in tex
     assert "Future-orientation sign no-go" in tex
     assert "Conditional common clock--flow packet and two-sign no-go" in tex
+    assert "Diagonal-orientation descent" in tex
+    assert "Contact cotangent completeness, CTC-P1" in tex
     assert "present seed scalar cannot be renamed" in tex
-    assert "Physical localized clock carrier and future orientation" in tex
+    assert "Physical CTC ownership and absolute charge preference" in tex
     assert "observed Tau signal" not in tex
 
 def test_ledger():
@@ -42,6 +44,9 @@ def test_future_orientation_ledger():
     assert data["proved"]["current_parent_selects_one_frequency_sign"] is False
     assert data["proved"]["conditional_common_clock_flow_packet_exists"] is True
     assert data["proved"]["current_seed_scalar_supplies_causal_sign_line"] is False
+    assert data["proved"]["diagonal_global_Z2_is_clock_terminal_null"] is True
+    assert data["proved"]["ctc_p1_closes_local_handoff_conditionally"] is True
+    assert data["proved"]["current_reduct_entails_ctc_p1"] is False
 
 def test_arxiv_archive_is_source_only():
     with zipfile.ZipFile(ROOT / "arxiv_submission_source.zip") as archive:

@@ -31,10 +31,19 @@ select one physical future direction.
 The hub reconciliation sharpens this boundary. Inside the retained enriched
 completion, one graph-normal post-body packet can jointly own transferred body
 energy, frequency, current and clock flow, while CCOC conditionally supplies a
-signed timelike reference. This still leaves two independent obligations: the
-physical parent must own the correctly typed causal sign line, and a charge-odd
-law must select one conjugate complex branch. The currently owned seed scalar
-cannot serve as that sign line.
+signed timelike reference. Selecting an absolute future/charge branch would
+still require a correctly typed causal sign line and a charge-odd law; the
+currently owned seed scalar cannot serve as that sign line. The relative clock
+terminal below does not require this stronger absolute selection.
+
+For the relative observer--source clock terminal, the absolute sign is stronger
+than necessary. Simultaneous reversal of both endpoint tangents and the
+connected null carrier is a diagonal `Z2` null of the frequency ratio. One
+common relative-orientation class therefore suffices. Contact cotangent
+completeness (`CTC-P1`) then derives the local Hodge--Legendre response and
+closes the coefficient-free handoff conditionally. The current reduct does not
+entail `CTC-P1`; physical ownership of that enriched response role is now the
+single local source blocker.
 
 ## Does Not Claim
 

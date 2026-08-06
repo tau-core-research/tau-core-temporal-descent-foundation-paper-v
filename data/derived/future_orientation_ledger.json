@@ -10,13 +10,19 @@
     "conditional_common_clock_flow_packet_exists": true,
     "ccoc_conditionally_selects_signed_timelike_reference": true,
     "current_seed_scalar_supplies_causal_sign_line": false,
-    "common_clock_quantum_scale_character_inside_selected_completion": true
+    "common_clock_quantum_scale_character_inside_selected_completion": true,
+    "relative_clock_ratio_requires_absolute_future_sign": false,
+    "diagonal_global_Z2_is_clock_terminal_null": true,
+    "ctc_p1_closes_local_handoff_conditionally": true,
+    "current_reduct_entails_ctc_p1": false
   },
   "exact_counterpair": ["Phi=f(r)exp(-i*omega*t)", "Phi_conjugate=f(r)exp(+i*omega*t)"],
-  "minimal_missing_source_type": "correctly_typed_source_owned_causal_sign_line_plus_charge_odd_occupation_law",
+  "minimal_missing_source_type": "physical_parent_ownership_of_contact_cotangent_completeness_CTC_P1",
   "ccoc_status": "conditionally_selects_signed_timelike_reference_but_not_complex_charge_occupation",
   "common_packet_status": "body_energy_frequency_current_and_clock_flow_share_one_conditional_graph_normal_source_packet",
   "seed_orientation_status": "current_seed_occupancy_label_is_permutation_trivial_and_cannot_supply_the_causal_sign_representation",
+  "clock_terminal_orientation_status": "common_relative_orientation_modulo_diagonal_Z2_is_sufficient_absolute_charge_preference_not_required",
+  "ctc_status": "uniquely_closes_the_local_coefficient_free_handoff_inside_the_declared_one_copy_quadratic_contact_class_but_is_not_entailed_by_the_current_reduct",
   "joint_character_weights": {
     "length": 1,
     "clock": 1,

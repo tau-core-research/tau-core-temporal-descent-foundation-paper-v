@@ -31,6 +31,24 @@ assert relative_pair[0] == -relative_pair[1]
 assert sp.expand(j**2 - (-j)**2) == 0
 assert ledger["proved"]["conditional_common_clock_flow_packet_exists"] is True
 assert ledger["proved"]["current_seed_scalar_supplies_causal_sign_line"] is False
+
+# Endpoint frequency transfer is invariant under the connected diagonal
+# orientation reversal, but not under a one-ended reversal.
+u_s, u_o, k_s, k_o = sp.symbols("u_s u_o k_s k_o", nonzero=True, real=True)
+ratio = sp.simplify((u_s * k_s) / (u_o * k_o))
+ratio_diag = sp.simplify(((-u_s) * (-k_s)) / ((-u_o) * (-k_o)))
+ratio_one_end = sp.simplify(((-u_s) * k_s) / (u_o * k_o))
+assert sp.simplify(ratio_diag - ratio) == 0
+assert sp.simplify(ratio_one_end + ratio) == 0
+assert ledger["proved"]["relative_clock_ratio_requires_absolute_future_sign"] is False
+assert ledger["proved"]["diagonal_global_Z2_is_clock_terminal_null"] is True
+
+# Scalar Fenchel--Young control for the positive contact metric.
+v, eta, h = sp.symbols("v eta h", real=True, positive=True)
+fenchel_gap = sp.simplify(h * v**2 / 2 + eta**2 / (2 * h) - eta * v)
+assert sp.simplify(fenchel_gap - h * (v - eta / h)**2 / 2) == 0
+assert ledger["proved"]["ctc_p1_closes_local_handoff_conditionally"] is True
+assert ledger["proved"]["current_reduct_entails_ctc_p1"] is False
 assert ledger["joint_character_weights"] == {
     "length": 1,
     "clock": 1,
@@ -39,4 +57,4 @@ assert ledger["joint_character_weights"] == {
     "c": 0,
     "conditional_gravity_ratio": 0,
 }
-print("FUTURE_ORIENTATION_PASS timelike_current=true common_packet=conditional sign_pair=degenerate seed_type=no_go")
+print("FUTURE_ORIENTATION_PASS common_packet=conditional diagonal_Z2=terminal_null CTC=conditional current_reduct=no_go")
