@@ -22,4 +22,21 @@ unit_sign = sp.simplify(j_t / sp.sqrt(-j_sq))
 scaled_unit_sign = sp.simplify((c**2 * j_t) / sp.sqrt(-(c**4 * j_sq)))
 assert sp.simplify(unit_sign - scaled_unit_sign) == 0
 assert ledger["proved"]["current_parent_selects_one_frequency_sign"] is False
-print("FUTURE_ORIENTATION_PASS timelike_current=true sign_pair=degenerate unit_gain=none")
+
+# A selected signed body reference compares with the current, but the
+# charge-even energy cannot select the relative sign.
+a, j = sp.symbols("a j", real=True, nonzero=True)
+relative_pair = (a * j, a * (-j))
+assert relative_pair[0] == -relative_pair[1]
+assert sp.expand(j**2 - (-j)**2) == 0
+assert ledger["proved"]["conditional_common_clock_flow_packet_exists"] is True
+assert ledger["proved"]["current_seed_scalar_supplies_causal_sign_line"] is False
+assert ledger["joint_character_weights"] == {
+    "length": 1,
+    "clock": 1,
+    "action": 2,
+    "hbar": 2,
+    "c": 0,
+    "conditional_gravity_ratio": 0,
+}
+print("FUTURE_ORIENTATION_PASS timelike_current=true common_packet=conditional sign_pair=degenerate seed_type=no_go")

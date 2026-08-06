@@ -28,6 +28,14 @@ orientations while retaining the same geometry and stress. The localized clock
 carrier is therefore conditionally nonempty, but the current parent does not
 select one physical future direction.
 
+The hub reconciliation sharpens this boundary. Inside the retained enriched
+completion, one graph-normal post-body packet can jointly own transferred body
+energy, frequency, current and clock flow, while CCOC conditionally supplies a
+signed timelike reference. This still leaves two independent obligations: the
+physical parent must own the correctly typed causal sign line, and a charge-odd
+law must select one conjugate complex branch. The currently owned seed scalar
+cannot serve as that sign line.
+
 ## Does Not Claim
 
 The package does not prove that Nature selects the required clock form, recover

@@ -24,6 +24,8 @@ def test_claim_boundaries_and_markers():
     assert "Pathwise VEP clock" in tex
     assert "Localized complex-phase clock carrier" in tex
     assert "Future-orientation sign no-go" in tex
+    assert "Conditional common clock--flow packet and two-sign no-go" in tex
+    assert "present seed scalar cannot be renamed" in tex
     assert "Physical localized clock carrier and future orientation" in tex
     assert "observed Tau signal" not in tex
 
@@ -38,6 +40,8 @@ def test_future_orientation_ledger():
     assert data["proved"]["phase_current_nonzero_timelike"] is True
     assert data["proved"]["normalized_unit_clock_covector_without_gain"] is True
     assert data["proved"]["current_parent_selects_one_frequency_sign"] is False
+    assert data["proved"]["conditional_common_clock_flow_packet_exists"] is True
+    assert data["proved"]["current_seed_scalar_supplies_causal_sign_line"] is False
 
 def test_arxiv_archive_is_source_only():
     with zipfile.ZipFile(ROOT / "arxiv_submission_source.zip") as archive:

@@ -1,15 +1,29 @@
 {
-  "schema": "tau-core-foundation-paper-v-future-orientation-v0.1",
+  "schema": "tau-core-foundation-paper-v-future-orientation-v0.2",
   "conditional_carrier": "stationary_VEP_complex_phase_branch",
   "proved": {
     "phase_current_nonzero_timelike": true,
     "normalized_unit_clock_covector_without_gain": true,
     "positive_amplitude_rescaling_invariance": true,
     "charge_conjugate_geometry_and_stress_equal": true,
-    "current_parent_selects_one_frequency_sign": false
+    "current_parent_selects_one_frequency_sign": false,
+    "conditional_common_clock_flow_packet_exists": true,
+    "ccoc_conditionally_selects_signed_timelike_reference": true,
+    "current_seed_scalar_supplies_causal_sign_line": false,
+    "common_clock_quantum_scale_character_inside_selected_completion": true
   },
   "exact_counterpair": ["Phi=f(r)exp(-i*omega*t)", "Phi_conjugate=f(r)exp(+i*omega*t)"],
-  "minimal_missing_source_type": "charge_odd_mixed_incidence_selecting_one_relative_Z2_branch",
+  "minimal_missing_source_type": "correctly_typed_source_owned_causal_sign_line_plus_charge_odd_occupation_law",
   "ccoc_status": "conditionally_selects_signed_timelike_reference_but_not_complex_charge_occupation",
+  "common_packet_status": "body_energy_frequency_current_and_clock_flow_share_one_conditional_graph_normal_source_packet",
+  "seed_orientation_status": "current_seed_occupancy_label_is_permutation_trivial_and_cannot_supply_the_causal_sign_representation",
+  "joint_character_weights": {
+    "length": 1,
+    "clock": 1,
+    "action": 2,
+    "hbar": 2,
+    "c": 0,
+    "conditional_gravity_ratio": 0
+  },
   "nature_status": "localized_clock_carrier_nonempty_conditionally_future_orientation_not_selected"
 }
