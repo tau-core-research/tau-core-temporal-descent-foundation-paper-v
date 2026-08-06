@@ -1,0 +1,10 @@
+cff-version: 1.2.0
+title: "Temporal Descent from an Atemporal Morphological Body"
+message: "This is a private preparation package; cite a released version only."
+type: article
+authors:
+  - family-names: Olcsak
+    given-names: Jozsef
+year: 2026
+license: MIT
+repository-code: "https://github.com/tau-core-research/tau-core-temporal-descent-foundation-paper-v"

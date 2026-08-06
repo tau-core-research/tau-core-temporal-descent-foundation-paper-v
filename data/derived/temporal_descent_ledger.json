@@ -1,0 +1,20 @@
+{
+  "schema": "tau-core-foundation-paper-v-temporal-descent-v0.1",
+  "input": "selected_or_explicitly_conditional_stabilized_body_packet",
+  "observer_resolution": "stable_partition_Q_OS_not_a_bare_threshold_relation",
+  "proved": {
+    "order_only_duration_selection": false,
+    "positive_exact_edge_form_defines_clock": true,
+    "clock_uniqueness_with_fixed_edge_form": "up_to_additive_constant",
+    "clock_uniqueness_with_edge_ray_only": "up_to_positive_affine_reparameterization",
+    "diamond_path_independence": "tau_01+tau_13=tau_02+tau_23"
+  },
+  "paper_iv_handoff": "delta_T_is_the_linearized_source_response_of_the_derived_observer_clock",
+  "open": [
+    "physical_parent_selects_the_positive_exact_clock_form",
+    "absolute_clock_unit",
+    "standard_relativistic_limit",
+    "nonzero_tau_specific_clock_distortion"
+  ],
+  "claim_boundary": "conditional_temporal_descent_theorem_not_a_complete_physical_time_derivation"
+}
