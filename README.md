@@ -21,6 +21,13 @@ The conditional TLKR/VEP body packet already supplies the local proper-time
 form on a timelike observer path. Distinct paths may accumulate different
 proper times; this is physical differential aging, not an inconsistency.
 
+The second packet imports the frozen VEP--complex-phase branch. Its conserved
+Noether current is nonzero and timelike and normalizes to a unit clock covector
+without a free amplitude gain. The conjugate frequency branches carry opposite
+orientations while retaining the same geometry and stress. The localized clock
+carrier is therefore conditionally nonempty, but the current parent does not
+select one physical future direction.
+
 ## Does Not Claim
 
 The package does not prove that Nature selects the required clock form, recover

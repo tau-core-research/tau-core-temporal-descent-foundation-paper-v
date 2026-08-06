@@ -1,0 +1,15 @@
+{
+  "schema": "tau-core-foundation-paper-v-future-orientation-v0.1",
+  "conditional_carrier": "stationary_VEP_complex_phase_branch",
+  "proved": {
+    "phase_current_nonzero_timelike": true,
+    "normalized_unit_clock_covector_without_gain": true,
+    "positive_amplitude_rescaling_invariance": true,
+    "charge_conjugate_geometry_and_stress_equal": true,
+    "current_parent_selects_one_frequency_sign": false
+  },
+  "exact_counterpair": ["Phi=f(r)exp(-i*omega*t)", "Phi_conjugate=f(r)exp(+i*omega*t)"],
+  "minimal_missing_source_type": "charge_odd_mixed_incidence_selecting_one_relative_Z2_branch",
+  "ccoc_status": "conditionally_selects_signed_timelike_reference_but_not_complex_charge_occupation",
+  "nature_status": "localized_clock_carrier_nonempty_conditionally_future_orientation_not_selected"
+}

@@ -23,9 +23,11 @@ observer-dependent distortion. A positive form supplies time along an occupied
 observer path; exactness is required only for the stronger existence of one
 path-independent global event-time. We then import the conditional TLKR/VEP
 body metric and prove that its timelike line supplies the standard local
-proper-time form without a separate clock metric. Nature has not yet been
-proved to occupy the required localized clock carrier, choose future
-orientation or produce a nonzero Tau-specific clock correction.
+proper-time form without a separate clock metric. A stationary complex-phase
+branch supplies a nonzero timelike conserved current and hence a normalized
+localized clock carrier. Its two charge-conjugate signs form an exact
+same-geometry counterpair, so the current parent still does not choose physical
+future orientation or produce a nonzero Tau-specific clock correction.
 \end{abstract}
 
 \section{Question and scope}
@@ -211,6 +213,79 @@ Therefore nonzero clock holonomy can be standard relativistic information.
 Paper V must preserve it and compare it with the VEP/GR baseline before naming
 any remainder a Tau-specific distortion.
 
+\section{Localized complex-phase clock carrier}
+
+The path-clock theorem requires a physical mode that can carry an internal
+clock. On the conditional stationary VEP--complex-scalar branch let
+\begin{equation}
+ ds^2=-\sigma(r)^2N(r)dt^2+N(r)^{-1}dr^2+r^2d\Omega^2,
+ \qquad
+ \Phi=f(r)e^{-i\omega t},
+ \label{eq:phase-branch}
+\end{equation}
+with \(0<|\omega|<m\), \(f>0\), \(N>0\), and \(\sigma>0\) on occupied
+support. Global phase symmetry gives the conserved current
+\begin{equation}
+ j_\Phi^\mu=2f^2\nabla^\mu(-\omega t).
+ \label{eq:phase-current}
+\end{equation}
+
+\begin{proposition}[Localized phase-clock carrier]
+On the branch \eqref{eq:phase-branch}, \(j_\Phi\) is nonzero, conserved and
+timelike wherever \(f\ne0\):
+\begin{equation}
+ g(j_\Phi,j_\Phi)
+ =-\frac{4f^4\omega^2}{\sigma^2N}<0.
+ \label{eq:timelike-current}
+\end{equation}
+Consequently
+\begin{equation}
+ u_\Phi=\frac{j_\Phi}{\sqrt{-g(j_\Phi,j_\Phi)}},
+ \qquad
+ \vartheta_\Phi=-u_\Phi^\flat
+ \label{eq:unit-clock-covector}
+\end{equation}
+defines a unit clock covector without a fitted amplitude gain. It is invariant
+under \(\Phi\mapsto c\Phi\), \(c>0\), and under global phase shifts.
+\end{proposition}
+
+\begin{proof}
+Direct substitution of Eq.~\eqref{eq:phase-branch} into the Noether current
+gives Eq.~\eqref{eq:timelike-current}. Stationarity and the absence of spatial
+current give \(\nabla_\mu j_\Phi^\mu=0\). Positive amplitude rescaling
+multiplies both numerator and norm in Eq.~\eqref{eq:unit-clock-covector} by
+\(c^2\), so the normalized covector is unchanged.
+\end{proof}
+
+This closes nonemptiness of the localized clock-carrier type inside the
+conditional VEP completion. It does not prove that Nature occupies that
+completion or that the full source/interface null quotient preserves the mode.
+
+\subsection{Future-orientation sign no-go}
+
+Complex conjugation exchanges \(\omega\leftrightarrow-\omega\). The current
+and clock covector reverse,
+\begin{equation}
+ j_\Phi\mapsto-j_\Phi,
+ \qquad
+ \vartheta_\Phi\mapsto-\vartheta_\Phi,
+\end{equation}
+while the scalar equation, stress tensor, VEP metric and path-clock norm are
+unchanged. Hence the two branches form an exact identical-reduct counterpair.
+
+\begin{proposition}[Future-orientation sign no-go]
+The current charge-even VEP--complex-scalar parent does not select one physical
+future component. A nonzero timelike clock carrier determines the two possible
+cone orientations, but selecting one requires a source-owned charge-odd mixed
+incidence or an equivalent signed orientation section.
+\end{proposition}
+
+The retained CCOC completion conditionally supplies a signed timelike reference
+from the observer--source contact volume and rank-three connector. It still
+does not energetically select one of the two complex-charge branches. Thus the
+remaining datum is discrete, not another clock gain or continuous temporal
+dimension.
+
 \section{Compatibility of different observers}
 
 Different observers may resolve different partitions and assign different
@@ -268,6 +343,8 @@ Order alone fixes duration or rate & disproved\\
 Positive path form defines an observer clock & proved\\
 Exact form defines global event synchronization & proved\\
 Conditional TLKR/VEP metric supplies local proper time & proved conditionally\\
+Localized complex-phase clock carrier is nonempty & proved conditionally\\
+Current parent selects one future sign & disproved by conjugate counterpair\\
 Distinct paths may have different proper times & proved; standard control\\
 Physical localized clock carrier and future orientation & open\\
 Global/singular relativistic limit and nonzero Tau excess & open\\
@@ -277,8 +354,9 @@ Global/singular relativistic limit and nonzero Tau excess & open\\
 
 The next bounded proof task is not another ordering gate. It is to test the
 existing selected body packet for physical occupation of the already
-conditional TLKR/VEP clock carrier and for a source-owned future orientation.
-The local proper-time form is no longer missing. Global exactness is not imposed:
+conditional localized phase-clock carrier and for one source-owned charge-odd
+future-orientation incidence. The local proper-time form and a normalized
+carrier candidate are no longer missing. Global exactness is not imposed:
 nonzero path holonomy is retained and tested against standard relativistic
 differential aging.
 
@@ -289,9 +367,9 @@ being placed in an external time. Stable observer-relative quantization gives
 resolved events; inherited orientation orders them; the conditional body
 metric supplies a positive path-clock form. Exactness governs global
 synchronization, not the existence of local proper time. The next source
-question is therefore concrete: does the physical parent occupy a localized
-clock carrier and future orientation on the conditional TLKR/VEP branch? Only
-after that can its path response fix the clock row used by downstream
+question is therefore concrete: does the physical parent occupy the localized
+phase-clock completion, and what source incidence selects one of its two
+conjugate orientation signs? Only after that can its path response fix the clock row used by downstream
 multi-readout tests. A nonzero remainder must survive the complete standard
 relativistic path control.
 

@@ -11,6 +11,7 @@ def test_required_files_exist():
         "figures/fig_temporal_descent_spine.pdf",
         "figures/fig_clock_diamond.pdf",
         "data/derived/temporal_descent_ledger.json",
+        "data/derived/future_orientation_ledger.json",
         "arxiv_submission_source.zip",
     ]:
         assert (ROOT / rel).exists(), rel
@@ -21,6 +22,8 @@ def test_claim_boundaries_and_markers():
     assert "Order-only no-go" in tex
     assert "Global synchronization criterion" in tex
     assert "Pathwise VEP clock" in tex
+    assert "Localized complex-phase clock carrier" in tex
+    assert "Future-orientation sign no-go" in tex
     assert "Physical localized clock carrier and future orientation" in tex
     assert "observed Tau signal" not in tex
 
@@ -29,6 +32,12 @@ def test_ledger():
     assert data["proved"]["order_only_duration_selection"] is False
     assert data["proved"]["positive_path_form_defines_observer_clock"] is True
     assert "global_and_singular_relativistic_limit" in data["open"]
+
+def test_future_orientation_ledger():
+    data = json.loads((ROOT / "data/derived/future_orientation_ledger.json").read_text())
+    assert data["proved"]["phase_current_nonzero_timelike"] is True
+    assert data["proved"]["normalized_unit_clock_covector_without_gain"] is True
+    assert data["proved"]["current_parent_selects_one_frequency_sign"] is False
 
 def test_arxiv_archive_is_source_only():
     with zipfile.ZipFile(ROOT / "arxiv_submission_source.zip") as archive:
