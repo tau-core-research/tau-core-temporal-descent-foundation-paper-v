@@ -48,8 +48,11 @@ single local source blocker.
 The paper closes that model-selection fork by adopting `CTC-P1` as the single
 selection law of the minimum-viable enriched temporal completion. This is an
 explicit physical postulate, not a theorem of the frozen reduct. The resulting
-local clock terminal is complete, uses one operational SI anchor, and predicts
-exactly zero Tau-over-GR excess on the neutral VEP/GR leaf.
+local clock terminal is complete and uses one operational SI anchor. The
+neutral VEP/GR leaf has exactly zero excess, but it is only the control branch.
+On the conditionally adopted occupied `CSMR+SRTC` contact branch, relative
+clock curvature and a sufficiently small loop holonomy are provably nonzero.
+Nature-level occupation and observation remain open.
 
 ## Does Not Claim
 

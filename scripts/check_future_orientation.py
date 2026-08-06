@@ -51,6 +51,7 @@ assert ledger["proved"]["ctc_p1_closes_local_handoff_conditionally"] is True
 assert ledger["proved"]["current_reduct_entails_ctc_p1"] is False
 assert ledger["temporal_mvp_selection"] == "adopts_CTC_P1_as_the_single_enriched_parent_selection_law"
 assert ledger["neutral_tau_over_gr_prediction"] == 0
+assert "nonzero_relative_clock_curvature" in ledger["occupied_csmr_srtc_contact_branch"]
 assert ledger["joint_character_weights"] == {
     "length": 1,
     "clock": 1,

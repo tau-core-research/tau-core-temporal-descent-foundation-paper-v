@@ -50,6 +50,7 @@ def test_future_orientation_ledger():
     assert data["proved"]["current_reduct_entails_ctc_p1"] is False
     assert data["temporal_mvp_selection"] == "adopts_CTC_P1_as_the_single_enriched_parent_selection_law"
     assert data["neutral_tau_over_gr_prediction"] == 0
+    assert "nonzero_relative_clock_curvature" in data["occupied_csmr_srtc_contact_branch"]
 
 def test_arxiv_archive_is_source_only():
     with zipfile.ZipFile(ROOT / "arxiv_submission_source.zip") as archive:
