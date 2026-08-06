@@ -19,9 +19,17 @@ t3_upper = t1 + t13
 t3_lower = t2 + t23
 assert sp.expand(t3_upper - t3_lower) == holonomy
 
+# Proper time is path-relative even in flat spacetime. For equal coordinate
+# endpoint time T, a rest path and a constant-speed path have different clocks.
+T, v = sp.symbols("T v", positive=True)
+tau_rest = T
+tau_moving = T * sp.sqrt(1 - v**2)
+assert sp.simplify(tau_rest - tau_moving) != 0
+
 # Order alone cannot set duration: every positive rescaling preserves order.
 scale = sp.symbols("scale", positive=True)
 assert sp.simplify(scale * t3_upper) > 0
 assert ledger["proved"]["order_only_duration_selection"] is False
-assert ledger["proved"]["positive_exact_edge_form_defines_clock"] is True
-print("TEMPORAL_DESCENT_PASS order_no_go=exact diamond_clock_condition=exact")
+assert ledger["proved"]["positive_exact_edge_form_defines_global_synchronization"] is True
+assert ledger["proved"]["positive_path_form_defines_observer_clock"] is True
+print("TEMPORAL_DESCENT_PASS order_no_go=exact path_clock=positive global_sync=zero_holonomy")

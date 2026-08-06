@@ -13,11 +13,13 @@ The first proof packet establishes two finite results:
 
 - causal order alone cannot select duration, clock rate, unit or time
   distortion;
-- a positive edge form gives a path-independent observer clock exactly when it
-  is exact, equivalently when all common-endpoint path sums agree.
+- a positive form gives an observer clock along each occupied path;
+- it gives one global path-independent event-time only in the stronger exact
+  case, equivalently when all common-endpoint path sums agree.
 
-The clock is unique up to an additive constant when the form is fixed, and up
-to positive affine reparameterization when only its ray is fixed.
+The conditional TLKR/VEP body packet already supplies the local proper-time
+form on a timelike observer path. Distinct paths may accumulate different
+proper times; this is physical differential aging, not an inconsistency.
 
 ## Does Not Claim
 

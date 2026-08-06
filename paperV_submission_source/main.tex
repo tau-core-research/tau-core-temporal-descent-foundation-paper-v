@@ -19,12 +19,13 @@ Tau Core. A stabilized morphological body is not assumed to evolve in an
 external parent time. An observer--source resolution map first supplies stable
 readout classes; a directed causal quotient may then order those classes. We
 prove that order alone cannot determine duration, clock rate, temporal unit or
-observer-dependent distortion. We also prove the exact positive-cochain
-criterion under which a resolved causal graph admits a path-independent clock,
-and give the compatibility condition for two observer clocks on shared
-resolved structure. These are conditional internal theorems. Nature has not
-yet been proved to select the required positive exact clock form, its absolute
-unit, the relativistic limit or a nonzero Tau-specific clock correction.
+observer-dependent distortion. A positive form supplies time along an occupied
+observer path; exactness is required only for the stronger existence of one
+path-independent global event-time. We then import the conditional TLKR/VEP
+body metric and prove that its timelike line supplies the standard local
+proper-time form without a separate clock metric. Nature has not yet been
+proved to occupy the required localized clock carrier, choose future
+orientation or produce a nonzero Tau-specific clock correction.
 \end{abstract}
 
 \section{Question and scope}
@@ -51,8 +52,8 @@ source object that turns order into a clock.
  \includegraphics[width=.94\linewidth]{figures/fig_temporal_descent_spine.pdf}
  \caption{The first temporal-descent spine. The observer-relative stable
  partition is part of the operational quantization; causal order alone does
- not fix duration. The open physical arrow selects the positive exact clock
- form.}
+ not fix duration. The physical arrow selects an occupied positive path-clock
+ form; global exactness is a stronger synchronization condition.}
  \label{fig:spine}
 \end{figure}
 
@@ -101,7 +102,7 @@ This no-go separates temporal orientation from metric time. It also blocks a
 common overclaim: an oriented causal incidence is not by itself a physical
 clock.
 
-\section{Exact positive clock form}
+\section{Path clocks and global synchronization}
 
 \begin{definition}[Observer clock form]
 An observer clock form is a positive edge cochain
@@ -116,9 +117,9 @@ It is exact when there exists \(t_O:\mathcal E_O\to\mathbb R\) such that
 for every directed edge \(u\to v\).
 \end{definition}
 
-\begin{proposition}[Exact-clock criterion]
+\begin{proposition}[Global synchronization criterion]
 On a connected finite resolved causal graph, a positive edge cochain defines a
-path-independent observer clock if and only if its sums agree on every pair of
+single path-independent event-time if and only if its sums agree on every pair of
 directed paths with common endpoints. Equivalently, its circulation vanishes
 on every cycle in the undirected cycle space. With \(\tau_O\) fixed, the clock
 is unique up to one additive constant.
@@ -134,27 +135,81 @@ Eq.~\eqref{eq:exact}. Two potentials with the same edge differences differ by
 a constant on a connected graph.
 \end{proof}
 
-If the source fixes only the ray \([\tau_O]\), a positive scale freedom remains
+This is stronger than the existence of a clock along one observer path. If the
+source fixes only the ray \([\tau_O]\), a positive scale freedom remains
 and clocks are unique only up to \(t_O\mapsto at_O+b\), \(a>0\). Thus the clock
 form and its absolute unit are distinct physical obligations.
 
 \begin{figure}[t]
  \centering
  \includegraphics[width=.66\linewidth]{figures/fig_clock_diamond.pdf}
- \caption{The minimal path-independence audit. A causal diamond admits one
- endpoint clock difference exactly when the two path sums agree.}
+ \caption{The minimal global-synchronization audit. A causal diamond admits one
+ path-independent endpoint time exactly when the two path sums agree.}
  \label{fig:diamond}
 \end{figure}
 
-\begin{corollary}[Diamond condition]
-For the graph in Fig.~\ref{fig:diamond}, a clock exists exactly when
+\begin{corollary}[Diamond synchronization condition]
+For the graph in Fig.~\ref{fig:diamond}, one global event-time exists exactly when
 \begin{equation}
  \tau_{01}+\tau_{13}=\tau_{02}+\tau_{23}.
  \label{eq:diamond}
 \end{equation}
-The difference of the two sides is clock holonomy and cannot be discarded as
-gauge if a terminal can observe it.
+The difference of the two sides is clock holonomy. It cannot be discarded as
+gauge if it represents the differential aging of physically distinct paths.
 \end{corollary}
+
+\section{Pathwise VEP clock}
+
+The current conditional body packet already contains more than abstract
+order. Its rank-one TLKR timelike carrier and VEP coframe define
+\begin{equation}
+ g_M=e_M^*\eta_{\rm role},
+ \qquad \eta_{\rm role}=(-1)\oplus I_3.
+ \label{eq:vep-metric}
+\end{equation}
+For an occupied future-timelike observer path \(\gamma:\lambda\mapsto x\),
+define the positive path form
+\begin{equation}
+ d\tau_{M,\gamma}
+ =\frac{1}{c}\sqrt{-g_M(\dot x,\dot x)}\,d\lambda.
+ \label{eq:path-clock}
+\end{equation}
+
+\begin{proposition}[Pathwise VEP clock]
+Equation~\eqref{eq:path-clock} is invariant under every
+orientation-preserving reparameterization of \(\gamma\), is positive on the
+timelike branch, and defines an accumulated observer clock
+\begin{equation}
+ T_O[\gamma;\lambda_0,\lambda_1]
+ =\int_{\lambda_0}^{\lambda_1}d\tau_{M,\gamma}
+ \label{eq:path-functional}
+\end{equation}
+up to an additive origin. The same body metric gives the null branch when
+\(g_M(\dot x,\dot x)=0\); no independent clock and photon metrics are needed.
+\end{proposition}
+
+\begin{proof}
+Under \(\lambda'=f(\lambda)\) with \(f'>0\), the tangent gains the inverse
+Jacobian while \(d\lambda\) gains the Jacobian, so their factors cancel in
+Eq.~\eqref{eq:path-clock}. Lorentz signature makes the radicand positive on a
+timelike tangent. Integration on the oriented interval gives
+Eq.~\eqref{eq:path-functional}; changing its lower reference shifts the clock
+origin. The null statement follows by restricting the same quadratic form to
+its cone.
+\end{proof}
+
+Pathwise time is generally not a scalar potential on all spacetime events.
+Even in flat spacetime, two paths with the same coordinate-time endpoints can
+give
+\begin{equation}
+ \tau_{\rm rest}=T,
+ \qquad
+ \tau_{\rm moving}=T\sqrt{1-v^2/c^2}<T.
+ \label{eq:differential-aging}
+\end{equation}
+Therefore nonzero clock holonomy can be standard relativistic information.
+Paper V must preserve it and compare it with the VEP/GR baseline before naming
+any remainder a Tau-specific distortion.
 
 \section{Compatibility of different observers}
 
@@ -162,18 +217,19 @@ Different observers may resolve different partitions and assign different
 rates without logical contradiction. Let a shared refinement \(C_{12}\) map
 to the two observer quotients by \(r_i:C_{12}\to C_i\).
 
-\begin{proposition}[Shared-clock compatibility]
-Two observer clocks preserve one common temporal orientation on their shared
-resolved domain when their pulled-back edge forms are positive and satisfy
+\begin{proposition}[Unit-equivalent observer clocks]
+Two observer clocks differ only by a common positive unit conversion on their
+shared resolved domain when their pulled-back edge forms satisfy
 \begin{equation}
  r_1^*\tau_1=\lambda_{12}\,r_2^*\tau_2,
  \qquad \lambda_{12}>0,
  \label{eq:observer-compatibility}
 \end{equation}
 on each connected comparison component. They then disagree at most by a
-positive rate and an additive origin. A negative factor reverses orientation;
-non-proportional forms encode genuine observer-dependent clock response rather
-than a mere change of units.
+positive rate and an additive origin. This proportionality is sufficient for
+unit equivalence, not necessary for physical consistency: non-proportional
+positive forms may encode ordinary path-dependent relativistic aging. A
+negative factor reverses the shared orientation.
 \end{proposition}
 
 The proposition does not require all observers to occupy the same body event.
@@ -188,10 +244,10 @@ Paper IV freezes the three-readout vector
  \delta Y=(\delta\rho,\delta p\ \text{or}\ \delta\Pi,\delta T)^{\mathsf T}
 \end{equation}
 and a primary-null determinant \(Z_\tau=\det[a\ b\ \delta Y]\). In this paper
-the final component is not an independently fitted time residual. Once
-\(\tau_O\) is source-derived, it is defined by the linearized response
+the final component is not an independently fitted time residual. Once the
+path-clock is source-derived, it is defined by the linearized response
 \begin{equation}
- \delta T= D_s t_O[\delta s]
+ \delta T= D_s T_O[\gamma;\delta s]
  \label{eq:clock-row}
 \end{equation}
 under the same frozen morphology descriptor and observer quantizer. Until
@@ -209,33 +265,34 @@ Result & Status\\
 \midrule
 Stable \(Q_{OS}\) defines observer-relative readout classes & definition\\
 Order alone fixes duration or rate & disproved\\
-Positive exact edge form defines a clock & proved\\
-Fixed clock form gives uniqueness up to origin & proved\\
-Clock-form ray gives uniqueness up to positive affine change & proved\\
-Shared observer compatibility criterion & proved conditionally\\
-Physical parent selects \(\tau_O\) and its unit & open\\
-Standard relativistic limit and nonzero Tau excess & open\\
+Positive path form defines an observer clock & proved\\
+Exact form defines global event synchronization & proved\\
+Conditional TLKR/VEP metric supplies local proper time & proved conditionally\\
+Distinct paths may have different proper times & proved; standard control\\
+Physical localized clock carrier and future orientation & open\\
+Global/singular relativistic limit and nonzero Tau excess & open\\
 \bottomrule
 \end{tabular}
 \end{center}
 
 The next bounded proof task is not another ordering gate. It is to test the
-existing selected body packet for a source-owned positive one-form whose
-descent is exact on the observer quotient and whose local limit equals proper
-time. Failure has a finite verdict: either the packet lacks physical clock
-content, or the relevant nonzero holonomy must be retained as a new observable
-instead of being quotiented away.
+existing selected body packet for physical occupation of the already
+conditional TLKR/VEP clock carrier and for a source-owned future orientation.
+The local proper-time form is no longer missing. Global exactness is not imposed:
+nonzero path holonomy is retained and tested against standard relativistic
+differential aging.
 
 \section{Conclusion}
 
 An atemporal morphological body can contain a temporal readout without first
 being placed in an external time. Stable observer-relative quantization gives
-resolved events; inherited orientation orders them; a positive exact clock
-form assigns durations. The first two ingredients do not imply the third. This
-paper therefore converts the temporal-descent problem into one concrete source
-question: does the selected physical body packet supply and occupy the exact
-positive form whose observer descent recovers proper time and fixes the clock
-row used by downstream multi-readout tests? The mathematical criterion is
-closed; physical source selection remains open.
+resolved events; inherited orientation orders them; the conditional body
+metric supplies a positive path-clock form. Exactness governs global
+synchronization, not the existence of local proper time. The next source
+question is therefore concrete: does the physical parent occupy a localized
+clock carrier and future orientation on the conditional TLKR/VEP branch? Only
+after that can its path response fix the clock row used by downstream
+multi-readout tests. A nonzero remainder must survive the complete standard
+relativistic path control.
 
 \end{document}

@@ -19,15 +19,16 @@ def test_claim_boundaries_and_markers():
     tex = (ROOT / "paperV_submission_source/main.tex").read_text()
     assert "Temporal Descent from an Atemporal Morphological Body" in tex
     assert "Order-only no-go" in tex
-    assert "Exact-clock criterion" in tex
-    assert "Physical source selection remains open" in tex or "physical source selection remains open" in tex
+    assert "Global synchronization criterion" in tex
+    assert "Pathwise VEP clock" in tex
+    assert "Physical localized clock carrier and future orientation" in tex
     assert "observed Tau signal" not in tex
 
 def test_ledger():
     data = json.loads((ROOT / "data/derived/temporal_descent_ledger.json").read_text())
     assert data["proved"]["order_only_duration_selection"] is False
-    assert data["proved"]["positive_exact_edge_form_defines_clock"] is True
-    assert "standard_relativistic_limit" in data["open"]
+    assert data["proved"]["positive_path_form_defines_observer_clock"] is True
+    assert "global_and_singular_relativistic_limit" in data["open"]
 
 def test_arxiv_archive_is_source_only():
     with zipfile.ZipFile(ROOT / "arxiv_submission_source.zip") as archive:
