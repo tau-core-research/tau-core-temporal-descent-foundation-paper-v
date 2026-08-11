@@ -12,6 +12,8 @@ def test_required_files_exist():
         "figures/fig_clock_diamond.pdf",
         "data/derived/temporal_descent_ledger.json",
         "data/derived/future_orientation_ledger.json",
+        "data/derived/observer_support_readout_ledger.json",
+        "data/derived/temporal_closure_ledger.json",
         "arxiv_submission_source.zip",
     ]:
         assert (ROOT / rel).exists(), rel
@@ -28,6 +30,15 @@ def test_claim_boundaries_and_markers():
     assert "Diagonal-orientation descent" in tex
     assert "Contact cotangent completeness, CTC-P1" in tex
     assert "Temporal MVP selection law" in tex
+    assert "Observer-support temporal readout" in tex
+    assert "Observer-support clock and comparison cocycle" in tex
+    assert "Scalar-clock criterion for extended support" in tex
+    assert "Primitive-axis temporal factorization" in tex
+    assert "J_T=\\widetilde J_T\\circ c_K" in tex
+    assert "Common-source temporal closure" in tex
+    assert "Regular local GR limit and first variation" in tex
+    assert "Pre-registered finite temporal discriminator" in tex
+    assert "Time-distortion claim ladder" in tex
     assert "present seed scalar cannot be renamed" in tex
     assert "CTC ownership in the temporal MVP" in tex
     assert "observed Tau signal" not in tex
@@ -51,6 +62,21 @@ def test_future_orientation_ledger():
     assert data["temporal_mvp_selection"] == "adopts_CTC_P1_as_the_single_enriched_parent_selection_law"
     assert data["neutral_tau_over_gr_prediction"] == 0
     assert "nonzero_relative_clock_curvature" in data["occupied_csmr_srtc_contact_branch"]
+
+def test_observer_support_readout_ledger():
+    data = json.loads((ROOT / "data/derived/observer_support_readout_ledger.json").read_text())
+    assert data["proved"]["observer_support_can_change_clock_rate"] is True
+    assert data["proved"]["multi_observer_rate_cocycle"] is True
+    assert data["proved"]["scalar_clock_requires_rank_one_component_forms"] is True
+    assert data["proved"]["temporal_parent_time_is_required"] is False
+
+def test_temporal_closure_ledger():
+    data = json.loads((ROOT / "data/derived/temporal_closure_ledger.json").read_text())
+    assert data["proved"]["common_source_temporal_closure_under_joint_ownership"] is True
+    assert data["proved"]["p3_handoff_alone_selects_clock_covector"] is False
+    assert data["proved"]["neutral_regular_local_gr_limit"] is True
+    assert data["neutral_prediction"] == 0
+    assert data["distortion_ladder"]["tau_over_gr_anomaly"] == "open_empirical_claim"
 
 def test_arxiv_archive_is_source_only():
     with zipfile.ZipFile(ROOT / "arxiv_submission_source.zip") as archive:

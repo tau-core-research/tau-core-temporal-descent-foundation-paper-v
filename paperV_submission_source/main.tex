@@ -1,10 +1,11 @@
 \documentclass[11pt]{article}
 \usepackage[a4paper,margin=2.5cm]{geometry}
-\usepackage{amsmath,amssymb,amsthm,booktabs,enumitem,graphicx,hyperref,microtype}
+\usepackage{amsmath,amssymb,amsthm,array,booktabs,enumitem,graphicx,hyperref,microtype}
 \hypersetup{colorlinks=true,linkcolor=blue,citecolor=blue,urlcolor=blue}
 \newtheorem{proposition}{Proposition}
 \newtheorem{definition}{Definition}
 \newtheorem{corollary}{Corollary}
+\newcolumntype{L}[1]{>{\raggedright\arraybackslash}p{#1}}
 \title{Temporal Descent from an Atemporal Morphological Body\\
 \large Tau Core Foundation Paper V: First Proof Packet}
 \author{Jozsef Olcsak}
@@ -35,10 +36,53 @@ does not yet choose an absolute physical future orientation. We finally show
 that the local observer--source clock ratio does not require that stronger
 choice: it descends on a common relative-orientation class modulo diagonal
 $\mathbb Z_2$. The temporal MVP adopts contact cotangent completeness as its
-one enriched-parent selection law. The local handoff then closes without a
+one enriched parent-realization law. The local handoff then closes without a
 free gain. Its neutral VEP/GR leaf is the zero-excess control; the separately
 adopted occupied contact completion has conditionally nonzero clock curvature.
+We also derive the observer-support clock law: position, morphological extent,
+accessible modes and stable temporal resolution determine a minimum-lift rate,
+while all observers inherited from one parent order obey a positive comparison
+cocycle. A single scalar clock for extended support exists only when its
+calibrated component clock forms have rank one.
 \end{abstract}
+
+\begin{center}
+\fbox{\begin{minipage}{.90\linewidth}
+\textbf{Dependency and ownership box.}
+
+\textbf{Inputs from earlier papers:} Paper I supplies the atemporal body and
+common observer-access architecture; Technical Paper I supplies the frozen
+typed source-support language; Paper IV supplies only a conditional occupied
+MVP packet. No external parent clock is imported.
+
+\textbf{Results owned here:} the order-only no-go; positive path duration;
+observer-relative clock rates and comparison cocycle; the global exactness
+criterion; the conditional TLKR/VEP clock carrier; the orientation no-go; and
+the temporal-MVP clock-curvature result.  The downstream scalar-15 mass-scale
+specialization is recorded only to separate common calibration from clock
+duration; it is not a temporal theorem owned here.
+\end{minipage}}
+\end{center}
+
+\begin{center}
+\fbox{\begin{minipage}{0.92\linewidth}\small
+\textbf{Atemporal parent-realization terminology.}
+Because the Tau parent is atemporal, phrases such as \emph{Nature selects} do
+not denote an external agent or a later choice. Their precise meaning is the
+internal physical implication
+\[
+ (B_\tau^{\rm phys},s_U,\mathcal L_{\rm parent})
+ \Longrightarrow \mathfrak P,
+\]
+together with occupation of the support of the resulting packet
+$\mathfrak P$. A theorem inside a declared completion proves only
+class-relative realization. It does not prove this unrestricted base--seed
+arrow, and agreement of finitely many terminal readouts cannot by itself
+establish ambient-source exhaustivity. Current-facing statements therefore
+use \emph{parent-law realization} and \emph{physical occupation}; any retained
+legacy selection language is shorthand for this same distinction.
+\end{minipage}}
+\end{center}
 
 \section{Question and scope}
 
@@ -53,11 +97,160 @@ input is a selected, or explicitly conditional, stabilized body packet. The
 observer is embedded in the readout architecture and does not stand outside
 the universe.
 
+Time is one specialization of the common morphology-conditioned primitive
+readout law
+\begin{equation}
+ Y_O^{(a)}=Q_O^{(a)}\circ T^{(a)}\circ A_O[M_\tau].
+ \label{eq:mcpr-time-interface}
+\end{equation}
+The observer access $A_O$ contains occupied position, extent, relational or
+light-cone access, protected nulls and available modes. The typed precursor
+$T^{(a)}$ and stable quantizer $Q_O^{(a)}$ then determine the operational
+terminal. The body's ``unfolding'' is accessible rank, response spectrum,
+closure, redundancy, null and retained-holonomy structure, not evolution in a
+hidden parent clock.
+
+The common-source occupation result sharpens this interface. In the declared
+MVP class with no duplicate source role, one cyclic faithful generated orbit
+and the nonzero record-copy unfolding propagate actual stable-record
+occupation through the complete typed packet. Time is therefore not an
+independently seeded component: its candidate terminal is generated as
+\begin{equation}
+ \begin{split}
+ Y_O^{(T)}&=Q_O^{(T)}\circ T^{(T)}\circ \mathcal I_O,\\
+ \mathcal I_O&=A_O[M_\tau].
+ \end{split}
+ \label{eq:generated-time-terminal}
+\end{equation}
+This proves neither that the unrestricted physical parent selects the MVP
+class nor that \(Y_O^{(T)}\) contains a nonzero Tau-over-GR distortion. The
+latter still requires the temporal source law, nontrivial clock curvature and
+a complete standard relativistic control developed below.
+
+\subsection{Relation to established accounts of time}
+
+The distinction between causal order, duration and clock synchronization is
+already present in relativistic spacetime physics \cite{Minkowski1909}, while
+the absence of an external time in canonical quantum gravity motivates the
+well-known problem of time \cite{WheelerDeWitt1967,Rovelli2004}. Relational
+and thermal-time programmes show that effective evolution or a clock flow may
+be reconstructed from correlations or state-dependent algebraic structure
+\cite{PageWootters1983,ConnesRovelli1994}. This paper does not claim these
+ideas as new. Its specific contribution is a typed descent statement: an
+atemporal stabilized morphology, observer support and a source-owned
+resolution map jointly define an observer-relative temporal terminal, while
+the neutral regular branch is required to reproduce ordinary relativistic
+proper time. Any Tau-specific distortion is an additional conditional branch
+and must survive an explicit GR and propagation control.
+
+\subsection{Factorization through the common primitive axis}
+
+The common-source statement can be made precise without importing the full
+multi-terminal programme into this paper. Let \(E_{P3}\) be the finite typed
+primitive-readout descriptor space, let
+\(c_K:E_{P3}\rightarrow\operatorname{Cl}(E_{P3},K_*)\) be its injective
+grade-one Clifford map, and let \(J_T:E_{P3}\rightarrow Y_T\) be the
+linearized temporal terminal at fixed body and observer support. On the
+grade-one image define
+\begin{equation}
+ \widetilde J_T\bigl(c_K(v)\bigr):=J_T(v).
+ \label{eq:p3-time-factor}
+\end{equation}
+
+\begin{proposition}[Primitive-axis temporal factorization]
+The map \(\widetilde J_T\) in Eq.~\eqref{eq:p3-time-factor} is well defined and
+unique on \(c_K(E_{P3})\), and
+\begin{equation}
+ J_T=\widetilde J_T\circ c_K,
+ \qquad
+ \ker J_T=c_K^{-1}(\ker\widetilde J_T),
+ \qquad
+ \operatorname{rank}J_T=\operatorname{rank}\widetilde J_T.
+ \label{eq:p3-time-rank-null}
+\end{equation}
+Hence the common handoff introduces neither an independent temporal gain nor
+a new temporal degree of freedom.
+\end{proposition}
+
+\begin{proof}
+The Clifford relation gives
+\(c_K(v)^2=K_*(v,v)I\). Positivity of \(K_*\) therefore makes \(c_K\)
+injective. Equation~\eqref{eq:p3-time-factor} is consequently independent of
+the representative and is the only map on the grade-one image whose
+composition with \(c_K\) equals \(J_T\). The kernel and rank identities follow
+from this bijection between \(E_{P3}\) and its grade-one image.
+\end{proof}
+
+This is a typed factorization theorem, not a new source-selection theorem.
+It does not select the Clifford handoff from the unrestricted physical parent,
+does not determine \(J_T\), and does not canonically extend
+\(\widetilde J_T\) to the whole Clifford algebra. Those questions belong to
+the common-terminal construction. Paper V needs only the restriction above:
+once the common descriptor and its handoff are adopted, the clock developed
+below is one downstream terminal of that same occupied descriptor rather than
+an independently sourced clock sector.
+
+The remaining source obligation is now explicit. Let \(\ell_T\in E_{P3}^*\)
+be the protected temporal covector selected by the temporal source law, let
+\(h_T>0\) be its inherited response metric, and require
+\(\ell_T|_{N_{\rm phys}}=0\). Contact cotangent completeness supplies the
+conjugate response \(v_T=h_T^{-1}\ell_T\), while the observer access and stable
+quantizer supply the operational map. Thus
+\begin{equation}
+ e_{P3}\mathrel{\mathop{\longrightarrow}^{c_K}}S_{P3}
+ \mathrel{\mathop{\longrightarrow}^{\ell_T\circ c_K^{-1}}}\ell_T(e_{P3})
+ \mathrel{\mathop{\longrightarrow}^{A_O,Q_O^{(T)}}}Y_O^{(T)}.
+ \label{eq:source-to-time-spine}
+\end{equation}
+
+\begin{proposition}[Common-source temporal closure]
+Suppose one frozen post-body packet jointly owns
+\(e_{P3},c_K,\ell_T,h_T,A_O,Q_O^{(T)}\), with positive \(h_T\), stable
+\(Q_O^{(T)}\), and every declared physical null annihilated by both
+\(\ell_T\) and the terminal. Then Eq.~\eqref{eq:source-to-time-spine} descends
+to the physical quotient and determines the temporal terminal without a
+second source copy or terminal gain. Conversely, the P3 handoff alone cannot
+determine a clock: different protected covectors \(\ell_T\) on the same
+grade-one image give different temporal terminals.
+\end{proposition}
+
+\begin{proof}
+Null annihilation makes \(\ell_T\) and the terminal constant on physical
+equivalence classes. Injectivity of \(c_K\) gives the unique grade-one
+factorization above, positivity of \(h_T\) gives the unique CTC conjugate
+response, and stability of \(Q_O^{(T)}\) gives observer-relative readout
+classes. No normalization remains except the common clock unit. For the
+converse, choose two unequal protected covectors on \(E_{P3}/N_{\rm phys}\);
+they share \(e_{P3}\) and \(c_K\) but separate at least one physical class.
+\end{proof}
+
+This proposition closes the logical interface, not unrestricted parent-law
+realization and occupation. The
+temporal MVP adopts the required CTC source role below; the unrestricted
+base--seed parent need not do so.
+
 The present result does not derive physical time from the minimal Tau skeleton,
 recover general relativity, predict the age of the universe, or establish an
 observer-dependent time anomaly. Its purpose is narrower: determine exactly
 what causal order supplies, what it cannot supply, and the minimum additional
 source object that turns order into a clock.
+
+\begin{center}
+\small
+\begin{tabular}{p{.16\linewidth}p{.34\linewidth}p{.39\linewidth}}
+\toprule
+Temporal level & Mathematical object & What it establishes\\
+\midrule
+Order & directed causal quotient \(\prec_O\) & before/after relation only\\
+Duration & positive occupied path form \(\tau_O\) & elapsed time along one path\\
+Clock rate & observer ratio \(N_i/N_j\) and cocycle & relative ticking and consistent comparison\\
+Global time & exact/integrable clock form & path-independent event-time where it exists\\
+\bottomrule
+\end{tabular}
+\end{center}
+
+The four rows are logically distinct. In particular, causal order does not
+imply duration, and local duration does not imply a global synchronized time.
 
 \begin{figure}[t]
  \centering
@@ -170,6 +363,113 @@ The difference of the two sides is clock holonomy. It cannot be discarded as
 gauge if it represents the differential aging of physically distinct paths.
 \end{corollary}
 
+\section{Observer-support temporal readout}
+
+The positive edge form can be derived from a continuous body clock geometry
+without introducing an observer-fitted lapse. Let $E_M$ be the regular body
+tangent space, $K_T(\chi)>0$ the source-frozen body clock form, and
+\begin{equation}
+ A_O(\chi):E_M\longrightarrow E_O
+ \label{eq:observer-access}
+\end{equation}
+the occupied observer access map. Its support, kernel and image encode body
+position, morphological extent and accessible modes. Protected nulls are
+removed before defining the minimum-lift quotient metric
+\begin{equation}
+ K_O=\left(A_OK_T^{-1}A_O^*\right)^+
+ \quad\hbox{on }\operatorname{im}A_O,
+ \label{eq:observer-clock-metric}
+\end{equation}
+where $+$ denotes the Moore--Penrose inverse. For an oriented body label
+$\chi$, body tangent $\dot M=dM/d\chi$, positive source-derived temporal
+resolution $\epsilon_O$, and common clock unit $T_*$, define
+\begin{equation}
+ N_O(\chi)=
+ {\sqrt{\langle A_O\dot M,K_OA_O\dot M\rangle}\over\epsilon_O},
+ \qquad
+ d\tau_O=T_*N_O(\chi)d\chi.
+ \label{eq:observer-support-clock}
+\end{equation}
+For an extended source or observer, $A_O$ is the full frozen relational or
+light-cone access operator, not a point-local scalar average. Operational
+ticks are supplied only afterwards by equality under the stable temporal
+quantizer $Q_O^{(T)}$.
+
+\begin{proposition}[Observer-support clock and comparison cocycle]
+Assume $K_T>0$, $\epsilon_O>0$, a common source-owned orientation and a
+non-null visible clock tangent. Then $d\tau_O>0$, the increment is invariant
+under every positive reparameterization of $\chi$, and on common accessible
+events the pairwise rates
+\begin{equation}
+ r_{ij}={d\tau_i\over d\tau_j}={N_i\over N_j}>0
+ \label{eq:observer-rate}
+\end{equation}
+satisfy
+\begin{equation}
+ \boxed{r_{ij}r_{jk}=r_{ik}.}
+ \label{eq:observer-cocycle}
+\end{equation}
+Thus observer position, extent and resolution may produce different and
+nonconstant clock rates without producing contradictory time orientations.
+\end{proposition}
+
+\begin{proof}
+Positivity follows from Eq.~\eqref{eq:observer-clock-metric}, the positive
+resolution and the non-null hypothesis. Under
+$\lambda=f(\chi)$, $f'>0$, the tangent scales by $1/f'$ while
+$d\lambda=f'd\chi$, so Eq.~\eqref{eq:observer-support-clock} is unchanged.
+The shared unit and parent increment cancel in Eq.~\eqref{eq:observer-rate},
+and ordinary division gives
+$(N_i/N_j)(N_j/N_k)=N_i/N_k$. Positivity preserves the common orientation.
+\end{proof}
+
+The temporal-parent model is the stronger special case
+$\chi=T_{\rm parent}$. The atemporal primary branch needs no such absolute
+clock: $\chi$ is any positive label of the already selected body order, and
+the line element is relabelling invariant.
+
+\begin{proposition}[Scalar-clock criterion for extended support]
+Let an extended observer contain coherent component clock one-forms
+$\omega_a=N_a(\chi)d\chi$. One scalar clock represents every component after
+fixed positive calibration if and only if the calibrated forms have rank one,
+equivalently
+\begin{equation}
+ \omega_a=c_a\,d\tau_O,
+ \qquad c_a>0,
+ \label{eq:scalar-clock-criterion}
+\end{equation}
+for every component. If their rank exceeds one, the complete observer has a
+multiclock/vector readout; any scalar average is an additional declared
+coarse graining.
+\end{proposition}
+
+\begin{proof}
+Equation~\eqref{eq:scalar-clock-criterion} makes all component forms
+collinear and hence rank one. Conversely, a positive rank-one family has one
+positive generator and fixed component coefficients, which supplies
+$d\tau_O$. A rank-greater-than-one family has no common one-form generator.
+\end{proof}
+
+Unequal rates include ordinary constant calibration. The invariant relative
+distortion one-form is
+\begin{equation}
+ \mathfrak D_{ij}=d\log{N_i\over N_j}.
+ \label{eq:relative-distortion}
+\end{equation}
+If it vanishes on a connected branch, only a constant relative calibration
+remains. If it is nonzero, the two observers have a nontrivial relative
+temporal readout profile. A Tau-specific physical signal requires the latter
+to differ from a complete source-matched GR/light-cone clock comparison; the
+conditional theorem alone is not empirical evidence.
+
+The same access law applies to every primitive terminal through
+Eq.~\eqref{eq:mcpr-time-interface}. Time is special only in integrating a
+positive ordered metric precursor into elapsed duration. Quantum, gravity,
+matter, radiation and gauge readouts use other typed terminal and resolution
+maps after the same morphology-conditioned access stage. Their relative
+accessibility can therefore vary with observer support without becoming
+independent fitted physics.
+
 \section{Pathwise VEP clock}
 
 The current conditional body packet already contains more than abstract
@@ -223,6 +523,46 @@ Therefore nonzero clock holonomy can be standard relativistic information.
 Paper V must preserve it and compare it with the VEP/GR baseline before naming
 any remainder a Tau-specific distortion.
 
+\begin{proposition}[Regular local GR limit and first variation]
+Let the neutral branch satisfy
+\begin{equation}
+ g_M\longrightarrow g_{\rm GR},\qquad
+ A_O\longrightarrow A_O^{\rm GR},\qquad
+ Q_O^{(T)}\longrightarrow Q_O^{(T),\rm GR},
+ \label{eq:gr-limit-data}
+\end{equation}
+with the same operational clock calibration. Then on every regular timelike
+path Eq.~\eqref{eq:path-clock} becomes exactly
+\begin{equation}
+ d\tau_{\rm GR}=\frac{1}{c}
+ \sqrt{-g_{\rm GR}(\dot x,\dot x)}\,d\lambda.
+ \label{eq:gr-proper-time}
+\end{equation}
+For \(g_M=g_{\rm GR}+h\), with \(h\) small and the access and quantizer held
+source-matched, the first metric contribution is
+\begin{equation}
+ d\tau_M-d\tau_{\rm GR}
+ =-\frac{h(\dot x,\dot x)}
+ {2c\sqrt{-g_{\rm GR}(\dot x,\dot x)}}\,d\lambda
+ +O(h^2).
+ \label{eq:clock-first-variation}
+\end{equation}
+\end{proposition}
+
+\begin{proof}
+Substitution of Eq.~\eqref{eq:gr-limit-data} into
+Eq.~\eqref{eq:path-clock} gives Eq.~\eqref{eq:gr-proper-time}. Expanding
+\(\sqrt{A+\delta A}=\sqrt A+\delta A/(2\sqrt A)+O(\delta A^2)\) with
+\(A=-g_{\rm GR}(\dot x,\dot x)>0\) and
+\(\delta A=-h(\dot x,\dot x)\) gives
+Eq.~\eqref{eq:clock-first-variation}.
+\end{proof}
+
+The proposition is local and regular. It does not establish a global or
+singular GR recovery, and it deliberately freezes access and quantization in
+the first-variation formula. A complete Tau comparison must add their
+source-matched variations rather than misidentify them as metric effects.
+
 \section{Localized complex-phase clock carrier}
 
 The path-clock theorem requires a physical mode that can carry an internal
@@ -268,7 +608,8 @@ multiplies both numerator and norm in Eq.~\eqref{eq:unit-clock-covector} by
 \end{proof}
 
 This closes nonemptiness of the localized clock-carrier type inside the
-conditional VEP completion. It does not prove that Nature occupies that
+conditional VEP completion. It does not prove that the unrestricted physical
+parent law occupies that
 completion or that the full source/interface null quotient preserves the mode.
 
 \subsection{Future-orientation sign no-go}
@@ -359,7 +700,7 @@ Equations~\eqref{eq:relative-character}--\eqref{eq:clock-energy-isometry}
 construct a gain-free common clock--flow packet once the enriched CCOC signed
 reference and occupied complex branch are supplied. The same charge-even
 parent admits its conjugate packet with the opposite relative sign. Therefore
-common ownership and normalized clock flow do not imply physical selection of
+common ownership and normalized clock flow do not imply physical realization of
 absolute future orientation; a correctly typed source-owned causal sign line
 and a charge-odd occupation law remain necessary for that stronger claim.
 \end{proposition}
@@ -375,7 +716,15 @@ $\sigma>0$ as
 so $c=\ell_H/T_H$ and the conditional gravitational ratio
 $\ell_H^2/\mathcal A_*$ are character-basic. This is a conditional joint
 calibration result. It neither predicts the absolute SI values nor proves
-that Nature selects the faithful common clock--quantum descent.
+that the unrestricted physical parent law realizes and occupies the faithful
+common clock--quantum descent.
+
+Technical Paper VII-C owns the downstream scalar-15/type-II scale and RG
+specialization. Paper V imports only its conclusion that a particle branch
+may share the same source character while retaining a different typed
+terminal law. No particle-scale formula is rederived here, and no such
+calibration implies observer clock distortion or selects physical occupation
+of the temporal branch.
 
 \subsection{Relative orientation removes the absolute-sign blocker}
 
@@ -454,9 +803,10 @@ The counterfamily proves that the current reduct cannot decide CTC-P1. The
 temporal MVP therefore closes the model-selection fork explicitly.
 
 \begin{definition}[Temporal MVP selection law]
-The enriched Tau parent is variationally cotangent-complete on every protected
-nonnull contact lane admitted by the physical quotient. It adopts CTC-P1 and
-excludes the $P_0$ and $P_\gamma$ alternatives from the temporal MVP.
+On every protected nonnull contact lane admitted by the physical quotient, the
+enriched Tau parent is variationally complete in the cotangent sense. It adopts
+CTC-P1 and excludes the $P_0$ and $P_\gamma$ alternatives from the temporal
+MVP.
 \end{definition}
 
 This is a physical postulate, not a theorem of old-bare Tau or of the frozen
@@ -490,7 +840,8 @@ At an occupied contact point,
 \end{equation}
 Therefore $F_\tau^{rel}\ne0$, and Stokes' theorem supplies a sufficiently
 small loop with $\oint_\gamma\alpha_\tau^{rel}\ne0$. This is a conditional
-nonzero time-distortion theorem, not evidence that Nature occupies the branch
+nonzero time-distortion theorem, not evidence that the unrestricted physical
+parent law occupies the branch
 or that the effect has been observed.
 
 \section{Compatibility of different observers}
@@ -537,11 +888,65 @@ Eq.~\eqref{eq:clock-row} is derived and the standard clock response is
 controlled, the Paper-IV contrast is a protocol handoff rather than a physical
 Tau prediction.
 
+\subsection{Pre-registered finite temporal discriminator}
+
+For two controlled observer--source paths \(\gamma_1,\gamma_2\) with the same
+source event pair and one independently frozen morphology descriptor \(z_M\),
+define the dimensionless contrast
+\begin{equation}
+ \Delta q_T(\gamma_1,\gamma_2;z_M)
+ =\log\frac{R_{12}^{\rm obs}}{R_{12}^{\rm GR}},
+ \qquad
+ R_{12}=\frac{\Delta\tau[\gamma_1]}{\Delta\tau[\gamma_2]}.
+ \label{eq:finite-temporal-discriminator}
+\end{equation}
+The null hypothesis of the neutral branch is
+\begin{equation}
+ H_0:\quad \Delta q_T=0
+ \label{eq:temporal-null}
+\end{equation}
+within propagated uncertainty. On the occupied curved contact branch, the
+source-forward alternative is
+\begin{equation}
+ H_1:\quad \Delta q_T
+ =\oint_{\gamma_1\circ\bar\gamma_2}\alpha_\tau^{rel}\ne0,
+ \label{eq:temporal-alternative}
+\end{equation}
+provided the loop lies in one calibrated chart and the dimensionless
+connection convention of Eq.~\eqref{eq:enriched-clock-curvature} is used.
+
+This is a pre-registration template, not a measured effect. Eligibility
+requires the path pair, \(z_M\), quantizer, clock extraction and uncertainty
+model to be frozen without using \(\Delta q_T\). The GR prediction must include
+special-relativistic Doppler and differential aging, gravitational redshift,
+Shapiro and lensing time delay, Sagnac/gravitomagnetic terms where relevant,
+propagation dispersion, intrinsic source lag and instrumental calibration.
+A nonzero residual is Tau-specific only if it survives those controls and has
+the sign and descriptor dependence fixed by the same source-forward contact
+law; a generic unexplained timing residual is insufficient.
+
+\subsection{Time-distortion claim ladder}
+
+The word ``distortion'' is used at three logically distinct levels:
+\begin{center}
+\begin{tabular}{L{.31\linewidth}L{.30\linewidth}L{.28\linewidth}}
+\toprule
+Level & Statement & Status\\
+\midrule
+Observer-relative rate & support, access and resolution can change \(N_O\) & conditional theorem\\
+Morphological clock curvature & occupied CSMR+SRTC gives \(F_\tau^{rel}\ne0\) & conditional theorem\\
+Tau-over-GR anomaly & Eq.~\eqref{eq:finite-temporal-discriminator} is nonzero on the physically occupied branch & open empirical claim\\
+\bottomrule
+\end{tabular}
+\end{center}
+The first two results do not entail the third.
+
 \section{What is proved and what remains open}
 
 The finite result is now sharp:
 \begin{center}
-\begin{tabular}{p{.44\linewidth}p{.42\linewidth}}
+\small
+\begin{tabular}{L{.44\linewidth}L{.42\linewidth}}
 \toprule
 Result & Status\\
 \midrule
@@ -549,7 +954,15 @@ Stable \(Q_{OS}\) defines observer-relative readout classes & definition\\
 Order alone fixes duration or rate & disproved\\
 Positive path form defines an observer clock & proved\\
 Exact form defines global event synchronization & proved\\
+Observer support induces a minimum-lift clock rate & proved conditionally\\
+Positive multi-observer rates obey the comparison cocycle & proved\\
+Every extended observer has one canonical scalar time & disproved; rank-one
+component synchronization is necessary and sufficient\\
+Temporal parent time is required for the support clock & disproved; it is a
+stronger special case of relabelling-invariant body order\\
 Conditional TLKR/VEP metric supplies local proper time & proved conditionally\\
+Neutral regular local limit reproduces GR proper time exactly & proved conditionally\\
+First metric correction to proper time & derived at fixed access and quantizer\\
 Localized complex-phase clock carrier is nonempty & proved conditionally\\
 One post-body packet can own body energy, frequency, current and clock flow & proved conditionally\\
 CCOC selects a signed timelike reference inside the retained completion & proved conditionally\\
@@ -559,11 +972,15 @@ Clock ratio requires an absolute future/charge sign & disproved; diagonal $\math
 CTC-P1 closes the coefficient-free local handoff & proved in the temporal MVP\\
 Current reduct entails CTC-P1 & disproved by contact-response counterfamily\\
 Common clock--quantum scale character & proved inside selected completion\\
+Temporal terminal factors uniquely through the common P3 grade-one image & proved conditionally\\
+Unrestricted physical parent selects the P3 Clifford handoff & open\\
 Distinct paths may have different proper times & proved; standard control\\
-CTC ownership in the temporal MVP & adopted physical selection law\\
+CTC ownership in the temporal MVP & adopted physical realization law\\
 Neutral VEP/GR control excess & exactly zero\\
 Occupied CSMR+SRTC contact curvature/holonomy & nonzero conditionally\\
-Absolute SI unit & one operational calibration anchor\\
+Finite Tau-over-GR timing discriminator & defined; empirical value open\\
+Absolute SI unit & one operational calibration anchor; the downstream
+scalar-15 branch fixes \(M_*/E_P=1/\sqrt{24\pi}\), not a new clock unit\\
 Global/singular extension and empirical validation & outside this packet\\
 \bottomrule
 \end{tabular}
@@ -577,24 +994,51 @@ clock--flow packet are no longer missing. Global exactness is not imposed:
 nonzero path holonomy is retained and tested against standard relativistic
 differential aging.
 
-\enlargethispage{3\baselineskip}
+\section{Occupied-support boundary for temporal descent}
+
+Temporal descent acts on occupied morphological support, not on every
+mathematically admissible ambient extension. In the finite smooth local class,
+a positive seed-unloaded and decoupled sector has zero effective source and
+stabilizes at zero; it cannot modify the clock terminal. A stable loaded or
+cross-coupled direction is part of the generated body and must be included
+before observer descent. This removes inert local-sector ambiguity without
+proving a nonzero Tau-over-GR rate shift or excluding global and topological
+parent sectors.
+
 \section{Conclusion}
+
+The common-terminal analysis adds a limitation to the temporal result. Even a
+complete local clock terminal cannot by itself prove that disconnected parent
+source components have additive action. Such a lift requires the clock map to
+be stacked with the completed gravity, quantum, gauge and matter terminals
+and for that joint map to be faithful on cross-component defects.
+Consequently the time terminal contributes one typed row to the eventual
+faithfulness audit, but observer-clock agreement or the GR proper-time limit
+alone cannot establish unrestricted physical parent isolation.
 
 An atemporal morphological body can contain a temporal readout without first
 being placed in an external time. Stable observer-relative quantization gives
 resolved events; inherited orientation orders them; the conditional body
-metric supplies a positive path-clock form. Exactness governs global
-synchronization, not the existence of local proper time. The hub reconciliation
-shows that one enriched post-body packet can jointly own body energy,
-frequency, current and clock flow, but also proves that this common ownership
-does not select the charge branch and that the present seed scalar has the
-wrong representation type to serve as causal orientation. The next source
-question is nevertheless smaller than absolute future selection: the clock
-ratio lives on the diagonal-orientation quotient, and the temporal MVP adopts
-CTC-P1 as its unique local completion. The neutral branch predicts zero
-Tau-over-GR excess, while the occupied CSMR+SRTC contact branch conditionally
-predicts nonzero relative clock curvature and local holonomy. Its path response can fix the clock row used by downstream
-multi-readout tests. A nonzero remainder must survive the complete standard
-relativistic path control.
+metric and observer-access quotient supply a positive support-dependent
+path-clock form. The common-source closure proves that this clock is a typed
+terminal of the shared occupied descriptor, not an independently seeded
+sector, although the temporal covector remains a physical source obligation.
+The neutral regular branch reproduces local GR proper time exactly. The
+enriched occupied contact branch conditionally carries nonzero relative clock
+curvature, but that result is not an observed anomaly. Paper V therefore ends
+with one finite discriminator: a source-frozen path-pair clock ratio must
+depart from the complete GR and propagation control with the independently
+predicted morphology dependence. Unrestricted parent-law realization and
+physical occupation of that branch, global and singular recovery, and
+empirical validation remain open.
+
+The scalar-15 handoff owned by Technical Paper VII-C reinforces rather than
+changes this conclusion: one common source character may calibrate clock/phase
+and particle sectors while their terminal laws remain typed and
+noninterchangeable. Particle-scale calibration is therefore not evidence for
+observer clock distortion or for physical occupation of the temporal branch.
+
+\bibliographystyle{unsrt}
+\bibliography{refs}
 
 \end{document}

@@ -7,6 +7,29 @@ This repository prepares Tau Core Foundation Paper V. It asks how a stabilized
 atemporal morphological body can yield observer-relative causal order, clock
 time, rate and temporal resolution without importing an external parent time.
 
+## Atemporal Parent-Realization Terminology
+
+Finite-local occupied-support completeness removes decoupled positive
+seed-unloaded sectors before temporal descent. It does not derive a nonzero
+clock anomaly or exclude global/topological parent sectors.
+
+Because the Tau parent is atemporal, “Nature selects” does not mean an
+external agent or a later decision. It is legacy shorthand for the internal
+physical implication
+
+\[
+(B_\tau^{\mathrm{phys}},s_U,\mathcal L_{\mathrm{parent}})
+\Longrightarrow \mathfrak P,
+\]
+
+together with physical occupation of the support of \(\mathfrak P\). A theorem
+inside a declared completion proves only class-relative realization; it does
+not prove this unrestricted base–seed arrow. Agreement of finitely many
+terminal readouts also cannot establish ambient-source exhaustivity. The
+current terminology is therefore **parent-law realization** and **physical
+occupation**.
+
+
 ## Main Claim
 
 The first proof packet establishes two finite results:
@@ -16,6 +39,39 @@ The first proof packet establishes two finite results:
 - a positive form gives an observer clock along each occupied path;
 - it gives one global path-independent event-time only in the stronger exact
   case, equivalently when all common-endpoint path sums agree.
+
+The new observer-support theorem specializes the common primitive-readout law
+to time. A source-frozen body clock form and observer-access operator induce a
+minimum-lift rate. Observer position, morphological extent, accessible modes
+and stable temporal resolution can therefore change elapsed-time readout.
+Rates inherited from one parent order remain positive and satisfy an exact
+multi-observer comparison cocycle. Extended support has one scalar clock only
+when its calibrated component clock forms have rank one; otherwise a
+multiclock readout must be retained.
+
+The common-source occupation handoff now makes explicit that time is not a
+separately seeded component. Inside the declared source-irredundant MVP class,
+cyclic generated support and nonzero record unfolding occupy the common typed
+packet, after which the time terminal is generated as
+`Y_O^(T)=Q_O^(T) o T^(T) o A_O[M_tau]`. This does not by itself prove a
+nonzero Tau-over-GR clock distortion; that remains conditional on the temporal
+source law and the clock-curvature branch tested in this paper.
+
+The paper also proves the narrow primitive-axis result it actually needs. If
+the adopted common P3 Clifford handoff is occupied, the linearized time
+terminal factors uniquely through its grade-one image and preserves terminal
+rank and kernel. This does not prove that the unrestricted physical parent law
+realizes and occupies that handoff,
+determine the time map, or replace the separate common-terminal programme.
+
+The closure packet now states the remaining source obligation explicitly: the
+common P3 handoff transports the occupied descriptor, while a protected
+temporal covector and positive response metric select the clock terminal. The
+neutral regular branch reproduces local GR proper time exactly. A finite
+dimensionless path-pair discriminator is pre-registered, with standard
+relativistic, propagation, source-lag and instrumental controls. Observer-rate
+dependence and conditional morphological clock curvature are derived results;
+a nonzero Tau-over-GR timing anomaly remains an open empirical claim.
 
 The conditional TLKR/VEP body packet already supplies the local proper-time
 form on a timelike observer path. Distinct paths may accumulate different
@@ -52,14 +108,20 @@ local clock terminal is complete and uses one operational SI anchor. The
 neutral VEP/GR leaf has exactly zero excess, but it is only the control branch.
 On the conditionally adopted occupied `CSMR+SRTC` contact branch, relative
 clock curvature and a sufficiently small loop holonomy are provably nonzero.
-Nature-level occupation and observation remain open.
+Unrestricted physical occupation and observation remain open.
 
 ## Does Not Claim
 
-The package does not prove that Nature selects the required clock form, recover
+The temporal terminal is one input to, not a substitute for, the global
+primitive-readout faithfulness test required to infer exact parent subsystem
+additivity.
+
+The package does not prove that the unrestricted physical parent law realizes
+and occupies the required clock form, recover
 the full relativistic limit, predict a nonzero Tau clock distortion or report
 an observed Tau signal. The physical source of the clock form and its absolute
-unit remain open.
+unit remain open. A temporal parent with absolute time is treated only as a
+stronger special case, not as a requirement of the atemporal descent theorem.
 
 ## Paper-IV Handoff
 

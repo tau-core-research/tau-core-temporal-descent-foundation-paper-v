@@ -1,0 +1,32 @@
+{
+  "schema": "tau-core-foundation-paper-v-temporal-closure-v0.1",
+  "proved": {
+    "p3_time_factorization_on_grade_one_image": true,
+    "factorization_preserves_rank_and_kernel": true,
+    "common_source_temporal_closure_under_joint_ownership": true,
+    "p3_handoff_alone_selects_clock_covector": false,
+    "neutral_regular_local_gr_limit": true,
+    "first_metric_proper_time_variation_at_fixed_access_quantizer": true
+  },
+  "distortion_ladder": {
+    "observer_relative_rate": "conditional_theorem",
+    "morphological_clock_curvature": "conditional_theorem",
+    "tau_over_gr_anomaly": "open_empirical_claim"
+  },
+  "finite_discriminator": "Delta_q_T=log(R12_obs/R12_GR)",
+  "neutral_prediction": 0,
+  "required_controls": [
+    "special_relativistic_Doppler_and_differential_aging",
+    "gravitational_redshift",
+    "Shapiro_and_lensing_time_delay",
+    "Sagnac_and_gravitomagnetic_terms_where_relevant",
+    "propagation_dispersion",
+    "intrinsic_source_lag",
+    "instrumental_calibration"
+  ],
+  "open": [
+    "unrestricted_parent_selects_p3_handoff_and_temporal_covector",
+    "global_and_singular_gr_recovery",
+    "nonzero_empirical_tau_over_gr_timing_signal"
+  ]
+}

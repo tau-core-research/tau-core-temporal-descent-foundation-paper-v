@@ -12,6 +12,8 @@ def run(*args):
 run(sys.executable, "scripts/build_figures.py")
 run(sys.executable, "scripts/check_temporal_descent.py")
 run(sys.executable, "scripts/check_future_orientation.py")
+run(sys.executable, "scripts/check_observer_support_readout.py")
+run(sys.executable, "scripts/check_temporal_closure.py")
 run("tectonic", "paperV_submission_source/main.tex")
 run(sys.executable, "scripts/build_arxiv_source.py")
 run(sys.executable, "-m", "pytest", "-q")
