@@ -7,6 +7,15 @@ This repository prepares Tau Core Foundation Paper V. It asks how a stabilized
 atemporal morphological body can yield observer-relative causal order, clock
 time, rate and temporal resolution without importing an external parent time.
 
+The paper also proves an internal underdetermination result. A coherent
+stage-by-stage realization and a completed atemporal body with the same causal
+observer filtration produce identical admitted terminal readouts whenever the
+terminals factor through the accessible body restriction. Literal ontic
+morphogenesis is therefore not excluded, but current internal readouts cannot
+select it. A physical distinction would require a source-derived,
+terminal-visible stage observable that does not factor through the completed
+body and accessible support; no current seed--base law supplies one.
+
 ## Atemporal Parent-Realization Terminology
 
 Finite-local occupied-support completeness removes decoupled positive
@@ -28,6 +37,14 @@ not prove this unrestricted base–seed arrow. Agreement of finitely many
 terminal readouts also cannot establish ambient-source exhaustivity. The
 current terminology is therefore **parent-law realization** and **physical
 occupation**.
+
+## Observer Co-Descent
+
+Temporal descent acts on an occupied body-side carrier candidate and forms an
+operational observer only together with regular local rank four, stable
+observer--source quantization and a nonzero record/effect. The observer, its
+accessible 4D world and its clock are therefore one co-descent packet; time is
+not applied afterward to a detached observer.
 
 
 ## Main Claim
@@ -122,6 +139,9 @@ the full relativistic limit, predict a nonzero Tau clock distortion or report
 an observed Tau signal. The physical source of the clock form and its absolute
 unit remain open. A temporal parent with absolute time is treated only as a
 stronger special case, not as a requirement of the atemporal descent theorem.
+It also does not prove that literal stage-by-stage morphogenesis is false; it
+proves only its present internal observational equivalence to completed-body
+causal unfolding under the declared factorization assumptions.
 
 ## Paper-IV Handoff
 
