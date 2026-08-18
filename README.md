@@ -16,6 +16,26 @@ select it. A physical distinction would require a source-derived,
 terminal-visible stage observable that does not factor through the completed
 body and accessible support; no current seed--base law supplies one.
 
+## Temporalizable Sector
+
+The temporal branch is now typed as an integrable enhancement over the
+temporalizable subset of atemporal carriers.  The carrier class is
+`A_temp = {P in A : Temp(P) is nonempty}`, while the full completion is the
+fibered space `T = disjoint_union_P Temp(P)` rather than, in general, a literal
+subset of `A`.  On a connected finite relation graph, a prescribed positive
+increment cochain defines one global scalar proto-time exactly when every
+signed cycle period vanishes after physical-null descent.  Acyclicity alone is
+not sufficient for already prescribed increments.
+
+Inside the declared enriched occurrence--action completion,
+`omega_occ = -d A_occ` supplies an exact source-owned order candidate and the
+adopted EOCC law gives it positive evaluation away from equilibrium.  This is
+a conditional internal theorem, not proof that Nature occupies the completion,
+not an absolute parent-time calibration and not observer-clock recovery.  A
+finite empirical test must therefore use a separately frozen bounded
+temporalization-blind comparator; it cannot reject an unrestricted atemporal
+carrier class merely in favour of one of its temporalizable enhancements.
+
 ## Atemporal Parent-Realization Terminology
 
 Finite-local occupied-support completeness removes decoupled positive
@@ -45,6 +65,16 @@ operational observer only together with regular local rank four, stable
 observer--source quantization and a nonzero record/effect. The observer, its
 accessible 4D world and its clock are therefore one co-descent packet; time is
 not applied afterward to a detached observer.
+
+## Inherited Minimal Formation Basis
+
+Paper V receives a stabilized body; it does not temporally construct the base
+or seed. The base is the physically anchored zero-source response structure,
+the seed is a response-distinct base-relative source class, and the body is a
+stable selected nonneutral response. Formation may occur by direct force,
+neutral instability or global branch exchange. A temporal terminal cannot be
+used backward to choose among these routes or to establish physical seed
+occupation.
 
 
 ## Main Claim
