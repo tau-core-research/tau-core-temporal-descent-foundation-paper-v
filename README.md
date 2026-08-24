@@ -7,6 +7,11 @@ This repository prepares Tau Core Foundation Paper V. It asks how a stabilized
 atemporal morphological body can yield observer-relative causal order, clock
 time, rate and temporal resolution without importing an external parent time.
 
+The temporal packet now inherits Paper II's compressed joint source datum.
+Temporal descent does not independently choose its mixed ideal, separator
+multiplicity, relative gluing or occupation, and it does not solve the
+upstream parent-law realization boundary.
+
 The paper also proves an internal underdetermination result. A coherent
 stage-by-stage realization and a completed atemporal body with the same causal
 observer filtration produce identical admitted terminal readouts whenever the
@@ -15,6 +20,15 @@ morphogenesis is therefore not excluded, but current internal readouts cannot
 select it. A physical distinction would require a source-derived,
 terminal-visible stage observable that does not factor through the completed
 body and accessible support; no current seed--base law supplies one.
+
+This no-go now covers the full finite acyclic interventional class used by the
+temporal branch. Deterministic and stochastic local laws, predeclared
+replacement interventions, adaptive decision nodes and shared-exogenous
+counterfactual copies all have an operationally identical atemporal
+simultaneous factor-graph realization. The theorem does not prove that Nature
+is atemporal; it proves that these finite internal experiments cannot identify
+literal ontic traversal without an additional source principle that excludes
+the simultaneous representation.
 
 ## Temporalizable Sector
 
@@ -41,6 +55,12 @@ carrier class merely in favour of one of its temporalizable enhancements.
 Finite-local occupied-support completeness removes decoupled positive
 seed-unloaded sectors before temporal descent. It does not derive a nonzero
 clock anomaly or exclude global/topological parent sectors.
+
+Under Paper IV's conditional one-source operational identity, temporal descent
+acts on the seed-generated physical quotient: inert ambient summands add no
+clock content, while a non-null same-complete-seed-key timing difference is a
+second-source falsifier. This does not establish the one-source premise,
+literal Parent traversal or a Tau-over-GR anomaly.
 
 Because the Tau parent is atemporal, “Nature selects” does not mean an
 external agent or a later decision. It is legacy shorthand for the internal
@@ -79,6 +99,38 @@ occupation.
 
 ## Main Claim
 
+### Projective/body measure boundary
+
+The retained CCOC and OGAS packets conditionally provide a signed local
+rank-four section, but CCOC itself is only a rank-three relative connector.
+They therefore do not by themselves identify the product Fubini--Study measure
+on `CP1_s x CP1_b` with the body four-volume.  If a source-owned
+split-preserving full connector is additionally supplied and required to
+preserve those declared measures, the common-line Jacobian is uniquely fixed:
+`gamma_T = |det A_M|^-1 = g_FFL^-3`.  This removes a possible fitted temporal
+gain inside that completion; it does not derive the connector, its physical
+occupation or an absolute SI time unit.
+
+The paper now separates that connector issue from the M4 metrological
+quotient. The common rescaling
+`(L_H,T_H,A_*) -> (sigma L_H,sigma T_H,sigma^2 A_*)` preserves the cone and
+all dimensionless clock--ruler observables. One measured dimension-bearing
+anchor selects an SI representative of the full common unit frame; normalized
+morphology does not predict its decimal SI value.
+
+### Public laboratory package boundary
+
+A bounded census completed on 2026-08-24 found no verified public release that
+joins the executed signed waveform, physical boundary and winding keys,
+same-run tomographic shots, complete QPT/Choi endpoint and nuisance metadata in
+one immutable ledger. `44hsiang/quantum_memory_data` is the strongest
+laboratory near-pass, but its missing execution--process join prevents the
+prospective temporal kernel from being evaluated retrospectively. This is a
+public-data identifiability stop, not evidence for or against Parent
+temporality. The minimum useful release is a run-keyed
+execution--boundary--QPT ledger; the Tau-side physical port law remains a
+separate conditional obligation.
+
 The first proof packet establishes two finite results:
 
 - causal order alone cannot select duration, clock rate, unit or time
@@ -95,6 +147,59 @@ Rates inherited from one parent order remain positive and satisfy an exact
 multi-observer comparison cocycle. Extended support has one scalar clock only
 when its calibrated component clock forms have rank one; otherwise a
 multiclock readout must be retained.
+
+The paper now also derives the exact formation-tick identifiability boundary.
+Stable quantizer-cell crossings on one monotone complete channel path define a
+tick count invariant under positive path relabelling, but the observed local
+intensity is the product of Parent front rate, body--access transmission and
+observer-specific cell density. One clock series therefore cannot recover a
+Parent proto-rate without independently frozen transmission and quantizer
+calibration. This result neither supplies SI time nor distinguishes literal
+temporal traversal from an atemporal ordered realization.
+
+Adding observer clocks does not remove the ambiguity. Their intensity ratios
+recover only relative stable-cell densities; the multi-observer log-Jacobian
+retains two common scale directions for every observer count. One absolute
+density anchor fixes transmission times rate, a second transmission anchor
+fixes the rate only in a chosen Parent parameter, and an absolute proto-rate
+also needs an independently sourced Parent scale or reference process.
+
+The paper now gives one exact conditional positive completion of that stop.
+If a single preterminal source packet owns the registered cell density,
+transmission and a positive scale one-form
+`d tau_P = kappa_P d rho`, then
+`u_r = I_O/(nu_O T_q kappa_P)` is invariant under positive path
+reparameterization. The explicit half-transmission candidate reduces this to
+`u_r = 2 Delta q_O I_O/T_*`. Current Tau does not select the packet jointly;
+rescaling the scale form preserves all ticks while changing the rate, and an
+atemporal ordered carrier can reproduce the same calibrated record. Thus this
+is rate calibration inside a temporal completion, not proof of literal Parent
+evolution.
+
+Coupling the same scale form to the already adopted EOCC law closes the
+coordinate bridge. Under positive path reparameterization the response metric
+must transform as `Gamma_lambda = f' Gamma_rho`, so the invariant packet is
+`Gamma_hat = kappa_P Gamma_rho` and
+`dq/d tau_P = -Gamma_hat^-1 dA_occ`. The corresponding physical action release
+is nonnegative and vanishes at stabilization. The full calibrated autonomous
+flow nevertheless has an exact simultaneous atemporal orbit representation
+with the same state, current, release, tick and finite-intervention tables.
+EOCC successive actuality remains primitive in the enriched temporal
+completion. A terminal outside a predeclared bounded atemporal prediction
+family can reject that class, but an unrestricted saturated atemporal image
+retains the same terminal and has pairwise Bayes factor one for every admitted
+dataset. More strongly, no law expressible only in the complete shared
+extensional Parent signature can supply that exclusion: the paired reducts
+are identical, so every structural law and definable enrichment is inherited
+by both. An intensional actuality semantics would be a theory-internal
+ontology rule, not terminal proof of Nature-level traversal. A lawful
+empirical continuation needs a source-derived physical resource bound that
+defines a predeclared bounded comparator. Such a bound is not an absolute
+separator when it is itself derived from the common reduct: its value and
+every complete-cut rank bound are identical on the temporal/saturated pair.
+Finite sequential reuse also has an atemporal constraint-network dual with
+the same cut/bond dimension. A bounded operational family may still be
+rejected, but only as that preregistered model class.
 
 The common-source occupation handoff now makes explicit that time is not a
 separately seeded component. Inside the declared source-irredundant MVP class,
@@ -156,6 +261,12 @@ neutral VEP/GR leaf has exactly zero excess, but it is only the control branch.
 On the conditionally adopted occupied `CSMR+SRTC` contact branch, relative
 clock curvature and a sufficiently small loop holonomy are provably nonzero.
 Unrestricted physical occupation and observation remain open.
+
+The clock/optics boundary is also explicit. A scalar `U(1)` connection may
+carry clock phase or loop holonomy but is projectively invisible to non-scalar
+multimode Choi orientation. A varying access projector can carry Kato mode
+transport without defining an absolute clock. Their common physical source is
+therefore an open richer-body question, not a consequence of either terminal.
 
 ## Does Not Claim
 

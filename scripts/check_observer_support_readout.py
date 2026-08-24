@@ -52,8 +52,69 @@ assert ledger["proved"]["observer_support_can_change_clock_rate"] is True
 assert ledger["proved"]["multi_observer_rate_cocycle"] is True
 assert ledger["proved"]["scalar_clock_requires_rank_one_component_forms"] is True
 assert ledger["proved"]["temporal_parent_time_is_required"] is False
+assert ledger["proved"]["pulled_back_stable_cell_count_is_reparameterization_invariant"] is True
+assert ledger["proved"]["tick_intensity_identifies_parent_front_rate_without_independent_calibration"] is False
+assert ledger["proved"]["arbitrarily_many_uncalibrated_observers_identify_parent_front_rate"] is False
+assert ledger["proved"]["absolute_proto_rate_is_invariant_without_parent_scale_anchor"] is False
+assert ledger["proved"]["source_calibrated_proto_rate_is_reparameterization_invariant"] is True
+assert ledger["proved"]["calibrated_order_proves_literal_parent_evolution"] is False
+assert ledger["proved"]["clock_mobility_product_is_reparameterization_invariant"] is True
+assert ledger["proved"]["calibrated_eocc_proves_literal_parent_evolution"] is False
+
+# The local tick law has an exact reciprocal rate--resolution counterfamily.
+nu, transmission, front_rate, c = sp.symbols(
+    "nu transmission front_rate c", positive=True
+)
+intensity = nu * transmission * front_rate
+intensity_twin = (nu / c) * transmission * (c * front_rate)
+assert sp.simplify(intensity_twin - intensity) == 0
+
+# Any number of observers leaves two common logarithmic scale directions.
+for observer_count in range(2, 13):
+    jacobian = sp.Matrix.hstack(
+        sp.eye(observer_count),
+        sp.ones(observer_count, 1),
+        sp.ones(observer_count, 1),
+    )
+    assert jacobian.rank() == observer_count
+    assert len(jacobian.nullspace()) == 2
+
+# A source-owned positive one-form removes coordinate relabelling from the
+# physical rate, while an unowned common scale remains record-invisible.
+kappa, fprime, e = sp.symbols("kappa fprime e", positive=True)
+physical_rate = intensity / (nu * transmission * kappa)
+physical_rate_relabelled = (intensity / fprime) / (
+    nu * transmission * (kappa / fprime)
+)
+assert sp.simplify(physical_rate_relabelled - physical_rate) == 0
+assert sp.simplify(physical_rate / e - physical_rate) != 0
+
+# The coordinate EOCC response and clock density transform oppositely, so
+# their physical product and the proto-time current are chart invariant.
+gamma_rho = sp.symbols("gamma_rho", positive=True)
+gamma_lambda = fprime * gamma_rho
+gamma_hat = kappa * gamma_rho
+gamma_hat_lambda = (kappa / fprime) * gamma_lambda
+coordinate_current = -1 / gamma_rho
+coordinate_current_lambda = -1 / gamma_lambda
+parent_current = coordinate_current / kappa
+parent_current_lambda = coordinate_current_lambda / (kappa / fprime)
+assert sp.simplify(gamma_hat_lambda - gamma_hat) == 0
+assert sp.simplify(parent_current_lambda - parent_current) == 0
+
+full_anchor_jacobian = sp.Matrix(
+    [
+        [1, 1, 1, 0],
+        [1, 0, 0, 0],
+        [0, 1, 0, 0],
+        [0, 0, 0, 1],
+    ]
+)
+assert full_anchor_jacobian.rank() == 4
 
 print(
     "OBSERVER_SUPPORT_READOUT_PASS "
-    "positive=yes variable_ratio=yes cocycle=exact scalar_clock_rank=1"
+    "positive=yes variable_ratio=yes cocycle=exact scalar_clock_rank=1 "
+    "tick_rate_resolution=nonidentifiable calibrated_rate=invariant "
+    "eocc_clock_mobility=invariant calibrated_orbit=nonidentifying"
 )
