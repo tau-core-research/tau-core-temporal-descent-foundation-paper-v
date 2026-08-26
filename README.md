@@ -12,6 +12,19 @@ Temporal descent does not independently choose its mixed ideal, separator
 multiplicity, relative gluing or occupation, and it does not solve the
 upstream parent-law realization boundary.
 
+## Time as One Descendant of the Common Atlas
+
+The clock is now written explicitly as
+\[
+Y_{OS}^{(T)}
+=Q_{OS}^{(T)}\circ T_{OS}^{(T)}
+\circ\Xi_{OS}\circ A_{OS}[M_\tau].
+\]
+It shares a preterminal ancestor with the quantum, gravity, matter and other
+readouts but does not generate them. Time determines the complete readout only
+under equality of clock and common-descriptor fibres; a scalar clock cannot do
+so for a higher-rank accessible packet.
+
 The paper also proves an internal underdetermination result. A coherent
 stage-by-stage realization and a completed atemporal body with the same causal
 observer filtration produce identical admitted terminal readouts whenever the
@@ -293,6 +306,23 @@ not as a fitted residual.
 ## Included Data
 
 Only symbolic and finite-graph audit data are included.
+
+## Phase-orbit occupation boundary
+
+The manuscript now separates solved body phase capability from post-body
+observer--source orbit occupation. A nonseparable lock can conditionally force
+the latter to follow the former, but the current source inventory does not
+derive that lock. The permitted law is body-first and lower triangular; it
+does not place the observer inside the seed or prove Parent temporality.
+
+## Full-4D Scoring Compiler Boundary
+
+Time is one typed projection of a common source-frozen full-4D excess, not an
+independently fitted anomaly. The inherited scoreable object is
+`E_K = (K_HH - K_std) - C K_VV^-1 C^dagger`; a temporal score is admissible
+only after the same coframe excess has generated every jointly used clock,
+photon, gravity, or matter terminal. No result in Paper V is promoted to a
+Nature-level clock distortion by this compiler.
 
 ## Reproduce
 
