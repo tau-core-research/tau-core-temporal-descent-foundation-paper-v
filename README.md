@@ -344,3 +344,10 @@ Read `.tau-core-kb/COMPACT_CORE.md`, then generate the focused routing pack.
 python .tau-core-kb/scripts/tc_kb.py status
 python .tau-core-kb/scripts/tc_kb.py pack big_picture
 ```
+
+## Unified Selection Update (2026-08-27)
+
+`PD-USS1` may conditionally select the common transport carrier, but this does
+not make the atemporal Parent a trajectory. Time remains an associated
+observer-relative terminal readout. `PD-USS-N1` and the `0/31` public census
+leave temporal actuality and any nonstandard clock signal open.
