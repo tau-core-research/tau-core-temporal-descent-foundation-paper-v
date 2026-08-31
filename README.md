@@ -144,6 +144,17 @@ temporality. The minimum useful release is a run-keyed
 execution--boundary--QPT ledger; the Tau-side physical port law remains a
 separate conditional obligation.
 
+A complementary public IBM Lindbladian packet now closes a weaker acquisition
+question: four real device/date contexts contain complete fixed `16 x 16`
+two-qubit process grids together with backend geometry, coupling, calibration
+and partial Hamiltonian descriptors. The frozen `NATMICRO-C1` audit scores the
+seven conjunctive clauses as `0` pass, `3` partial and `4` fail. Missing are an
+independently measured smooth morphology/access-projector axis, common-shot
+source--process covariance, source-derived `Q_OS` cells and a source-frozen Tau
+process derivative. This establishes terminal process occupation, not a Tau
+micro-kernel, Parent-time source or observer-clock calibration, and it does not
+repair the execution--process join above.
+
 The first proof packet establishes two finite results:
 
 - causal order alone cannot select duration, clock rate, unit or time
