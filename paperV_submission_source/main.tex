@@ -6,10 +6,10 @@
 \newtheorem{definition}{Definition}
 \newtheorem{corollary}{Corollary}
 \newcolumntype{L}[1]{>{\raggedright\arraybackslash}p{#1}}
-\title{Temporal Descent from an Atemporal Morphological Body\\
+\title{Temporal Descent from an Atemporal Morphological Response Configuration\\
 \large Tau Core Foundation Paper V: First Proof Packet}
 \author{Jozsef Olcsak}
-\date{Last revised: 29 August 2026}
+\date{Last revised: 3 September 2026}
 
 \begin{document}
 \maketitle
@@ -65,6 +65,19 @@ while all observers inherited from one parent order obey a positive comparison
 cocycle. A single scalar clock for extended support exists only when its
 calibrated component clock forms have rank one.
 \end{abstract}
+
+\paragraph{Morphological-response convention.}
+The inherited input $M_\tau^\star$ is the complete \emph{stabilized
+morphological response configuration}; ``morphological body'' is shorthand.
+Its base is the pre-readout carrier/support context and its seed is a
+base-readable relational/loading pattern.  Atemporal selection of
+$M_\tau^\star$, actual traversal of a formation path, and observer-clock
+descent are three distinct claims.  This paper derives the last only under its
+stated clock premises and proves that admitted terminal records need not decide
+the second.
+Under MRC-DEF2, the base and seed are typed pregeometric relational candidates,
+not ordinary objects already moving in recovered spacetime. Such ordinary
+objects are downstream internal structures/readouts of the supplied body.
 
 \begin{center}
 \fbox{\begin{minipage}{.90\linewidth}
@@ -1764,6 +1777,110 @@ calibration. In particular it neither repairs the missing
 execution--process join above nor licenses terminal process variation to be
 read backward as a Parent clock source.
 
+\subsection{Elastic-sheet clock and double-reconstruction control}
+
+A conventional elastic plate supplies a useful standard-limit control for
+the separation between body geometry, occurrence transport and observer
+time.  Let two dimensionless support controls \(s=(\theta,\phi)\) select
+
+\begin{equation}
+ n=(\sin\theta\cos\phi,\sin\theta\sin\phi,\cos\theta)^{\mathsf T},
+ \qquad P(s)=I-nn^{\mathsf T},
+ \label{eq:elastic-clock-projector}
+\end{equation}
+
+and let a mass-normalized stiffness have the gapped form
+
+\begin{equation}
+ K_e(s)=\omega_l^2P(s)+\omega_h^2[I-P(s)],
+ \qquad \omega_h>\omega_l>0.
+ \label{eq:elastic-clock-stiffness}
+\end{equation}
+
+The spectral or body reconstruction uses only \(P(s)\) and the Kato
+generator \([dP,P]\).  A separate occurrence reconstruction integrates the
+complete positive-frequency elastic process
+
+\begin{equation}
+ i\frac{dU_{\rm occ}}{dt}
+ =K_e(s(t))^{1/2}U_{\rm occ},
+ \label{eq:elastic-clock-occurrence}
+\end{equation}
+
+then removes the source-known common low-mode phase after a closed control
+loop.  For a slow gapped loop its restricted polar transport converges to the
+body-side holonomy; for a fast loop it exhibits leakage, and when the gap
+closes the physical operator becomes independent of \(s\) and the occurrence
+holonomy is trivial.  This is an ordinary adiabatic elastic result, not a Tau
+clock prediction.
+
+Its temporal interpretation is nevertheless decisive for the architecture.
+The parameter \(t\), loop duration and sensor timestamps are supplied by the
+laboratory clock used to operate and compare the two reconstructions.  They
+are terminal calibration data.  The experiment therefore cannot be read as
+directly observing an atemporal Parent moving in that time.  A microphone,
+laser vibrometer or strain sensor returns a context-dependent projection of
+the elastic state, followed by its own stable resolution map; changing sensor
+position, propagation loss or quantizer cells may change the resolved record
+without creating a second physical time.  A physical plate experiment would
+validate the observer--source measurement architecture only.  A Tau-level
+temporal test would additionally require a source-frozen departure from the
+complete standard elastic and clock model.
+
+\section{Coframe migration and operational partitions}
+
+The common Parent readout must be typed before clocks or distances are
+transported.  We write
+\begin{equation}
+ \Xi^{\rm cont}_{OS}:X_{OS}\longrightarrow Z,
+ \qquad
+ D^{\rm op}_{OS}=Q_{OS}\!\left(\Xi^{\rm cont}_{OS}\right),
+ \label{eq:paperv-continuous-operational-readout}
+\end{equation}
+where the first object is smooth and the second is the stable resolved
+record.  Let \(e_L:TX_{OS}\to\mathbb R^{1,3}\) be a legacy coframe on a
+regular stratum.  A coframe solder on the descriptor image exists precisely
+when
+\begin{equation}
+ \ker D\Xi^{\rm cont}_{OS}\subseteq\ker e_L,
+ \qquad
+ e_L=S_{L\leftarrow\Xi}\,D\Xi^{\rm cont}_{OS}.
+ \label{eq:paperv-t4d-t62}
+\end{equation}
+It is unique on \(\operatorname{im}D\Xi^{\rm cont}_{OS}\).  Equality of the
+global fibre relations gives exact descriptor equivalence; equality of local
+ranks alone does not.
+
+If \(\eta\) is the Lorentz form in the legacy coframe, define
+\begin{equation}
+ \eta_\Xi=S_{L\leftarrow\Xi}^{*}\eta .
+ \label{eq:paperv-pulled-lorentz-metric}
+\end{equation}
+Then for every represented tangent \(v\),
+\begin{equation}
+ \eta_\Xi(D\Xi^{\rm cont}_{OS}v,D\Xi^{\rm cont}_{OS}v)
+ =\eta(e_Lv,e_Lv).
+ \label{eq:paperv-t4d-c45}
+\end{equation}
+Consequently the already calibrated proper-time and spatial-distance
+functionals agree along every admissible represented path.  This is a
+terminal migration theorem, not a claim that the atemporal Parent carries
+proper time or an independently distorted spatial metric.
+
+For hard resolution the differential criterion is insufficient.  If
+\(Q_{\rm new}\) and \(Q_{\rm old}\) denote the new and legacy stable
+quantizers, operational migration requires
+\begin{equation}
+ Q_{\rm new}(x)=Q_{\rm new}(x')
+ \ \Longrightarrow\
+ Q_{\rm old}(x)=Q_{\rm old}(x'),
+ \label{eq:paperv-hard-quantizer-partition}
+\end{equation}
+that is, the new partition refines the legacy partition.  Exact operational
+equivalence requires equality of the partition relations.  None of these
+conditions selects the physical \(Q_{OS}\), the clock/distance calibration,
+the observer--source carrier or its Nature occupation.
+
 \section{What is proved and what remains open}
 
 The finite result is now sharp:
@@ -1774,6 +1891,13 @@ The finite result is now sharp:
 Result & Status\\
 \midrule
 Stable \(Q_{OS}\) defines observer-relative readout classes & definition\\
+Legacy coframe factors through \(\Xi^{\rm cont}_{OS}\) iff
+\(\ker D\Xi^{\rm cont}_{OS}\subseteq\ker e_L\) on a regular stratum &
+exact conditional migration theorem\\
+Pulled Lorentz form preserves legacy proper-time and distance values &
+proved for the represented paths; physical calibration not derived\\
+Hard operational record preserves the legacy record & conditional on
+stable-partition refinement; smooth rank is insufficient\\
 Coherent staged body and completed body with causal filtration are internally distinguishable & disproved under restriction-compatible terminal factorization\\
 Terminal-visible nonfactorizing stage observable derived from the current source law & open; none presently supplied\\
 Finite acyclic interventions identify literal ontic traversal & disproved;
@@ -1923,6 +2047,34 @@ proper-time limit required in this paper.  Conversely, a complete clock row
 does not certify the whole terminal stack: local physical-quotient closure
 requires $\ker J_{\rm term}=\mathcal N_{\rm phys}$.  Nature occupation and
 literal Parent evolution remain open.
+
+\subsection*{Internal measurement backaction in the clock terminal}
+
+After the morphological body has been stabilized and frozen, an internal
+observer/apparatus coordinate $o$ may still couple to a post-body target
+coordinate $x$. For one supplied $C^2$ post-body functional, regular target
+stationarity gives
+\begin{equation}
+ D_o x_*=-H_X^{-1}C_{XO},\qquad
+ H_X=D_x^2\mathcal A_{\rm post},\quad
+ C_{XO}=D_xD_o\mathcal A_{\rm post}.
+ \label{eq:paperv-generalized-backaction}
+\end{equation}
+The continuous clock descendant therefore separates exactly as
+\begin{equation}
+ D_oY_T^{\rm cont}
+ =D_o\Pi_T-D_x\Pi_T\,H_X^{-1}C_{XO}.
+ \label{eq:paperv-clock-backaction-split}
+\end{equation}
+The first term is direct context dependence; only the second is
+target-mediated backaction. For a hard clock quantizer, the exact operational
+control compares the actual record with the record obtained at the same
+observer context while clamping the target at its unperturbed stationary
+value. A stable same-cell result can therefore hide nonzero continuous
+backaction, while a changed context-dependent clock record can occur even when
+$C_{XO}=0$. This conditional post-body identity neither reselects the frozen
+body nor proves a temporal Parent, a physical nonzero $C_{XO}$, Nature
+occupation, or a nonstandard clock anomaly.
 
 \subsection*{Unified-selection non-impact on Parent temporality}
 

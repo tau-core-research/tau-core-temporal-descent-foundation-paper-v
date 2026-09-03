@@ -20,7 +20,7 @@ def test_required_files_exist():
 
 def test_claim_boundaries_and_markers():
     tex = (ROOT / "paperV_submission_source/main.tex").read_text()
-    assert "Temporal Descent from an Atemporal Morphological Body" in tex
+    assert "Temporal Descent from an Atemporal Morphological Response Configuration" in tex
     assert "Order-only no-go" in tex
     assert "Global synchronization criterion" in tex
     assert "Pathwise VEP clock" in tex
@@ -54,6 +54,10 @@ def test_claim_boundaries_and_markers():
     assert "atemporal simultaneous relation" in tex
     assert "present seed scalar cannot be renamed" in tex
     assert "CTC ownership in the temporal MVP" in tex
+    assert "Internal measurement backaction in the clock terminal" in tex
+    assert "eq:paperv-generalized-backaction" in tex
+    assert "eq:paperv-clock-backaction-split" in tex
+    assert "same observer context while clamping the target" in " ".join(tex.split())
     assert "observed Tau signal" not in tex
 
 def test_ledger():
@@ -101,3 +105,19 @@ def test_arxiv_archive_is_source_only():
     assert "main.tex" in names
     assert "figures/fig_temporal_descent_spine.pdf" in names
     assert "main.pdf" not in names
+
+
+def test_coframe_readout_migration_ledger():
+    data = json.loads(
+        (ROOT / "data/derived/coframe_readout_migration_ledger.json").read_text()
+    )
+    assert data["continuous_descriptor"] == "Xi_OS^cont"
+    assert data["operational_record"] == "D_OS^op=Q_OS(Xi_OS^cont)"
+    assert data["coframe_factorization"] == "e_L=S_(L<-Xi) D Xi_OS^cont"
+    assert data["proper_time_distance_preserved"] == "conditional_exact_identity"
+    assert data["hard_quantizer_boundary"] == "new_partition_refines_legacy_partition"
+    assert data["physical_calibration"] == "open"
+    tex = (ROOT / "paperV_submission_source/main.tex").read_text()
+    assert "eq:paperv-t4d-t62" in tex
+    assert "eq:paperv-t4d-c45" in tex
+    assert "eq:paperv-hard-quantizer-partition" in tex

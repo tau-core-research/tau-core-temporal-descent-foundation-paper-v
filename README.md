@@ -1,16 +1,34 @@
 # Tau Core Temporal Descent Foundation Paper V
 
+**Morphology convention:** the input body is formally the complete stabilized
+morphological response configuration selected from a base carrier and its
+base-readable seed/load pattern. Atemporal selection, literal morphogenetic
+traversal and observer-clock descent are three separate claims.
+MRC-DEF2 treats the upstream base/seed as typed pregeometric relational
+candidates; ordinary objects and observers occur only downstream.
+
 **Repository kind:** paper
 **Status:** private preparation manuscript; first proof packet built
 
 This repository prepares Tau Core Foundation Paper V. It asks how a stabilized
-atemporal morphological body can yield observer-relative causal order, clock
+atemporal morphological response configuration can yield observer-relative causal order, clock
 time, rate and temporal resolution without importing an external parent time.
 
 The temporal packet now inherits Paper II's compressed joint source datum.
 Temporal descent does not independently choose its mixed ideal, separator
 multiplicity, relative gluing or occupation, and it does not solve the
 upstream parent-law realization boundary.
+
+## Elastic-Sheet Clock Control
+
+The manuscript now includes the gapped elastic-sheet double reconstruction as
+a standard temporal control. Its loop duration and sensor timestamps are
+laboratory clock inputs used to operate the experiment; they are not evidence
+that the atemporal Parent evolves in that time. Sensor position, propagation
+and resolution can change the recorded modal history without creating a
+second physical time. A physical plate realization would validate the
+observer--source measurement architecture only unless a source-frozen
+departure from standard elasticity and clock calibration were predicted.
 
 ## Time as One Descendant of the Common Atlas
 
@@ -98,6 +116,19 @@ operational observer only together with regular local rank four, stable
 observer--source quantization and a nonzero record/effect. The observer, its
 accessible 4D world and its clock are therefore one co-descent packet; time is
 not applied afterward to a detached observer.
+
+## Internal Measurement Backaction at the Clock Terminal
+
+Once the morphological body is frozen, an internal observer/apparatus may
+still perturb a post-body target through a mixed Hessian. On a regular target
+branch the exact response is `D_o x_*=-H_X^-1 C_XO`, and the continuous clock
+change splits into direct context dependence and the target-mediated term
+`-D_x Pi_T H_X^-1 C_XO`. A hard clock record must be tested against the
+same-context, clamped-target control: unchanged quantized output can hide a
+continuous response, while a changed context-only output does not prove
+backaction. This is a conditional post-body result; it does not make the
+Parent temporal, reselect the frozen body, establish a nonzero physical
+coupling, or identify a Tau-specific clock effect.
 
 ## Inherited Minimal Formation Basis
 
@@ -294,6 +325,18 @@ therefore an open richer-body question, not a consequence of either terminal.
 
 ## Does Not Claim
 
+The manuscript now distinguishes the smooth common descriptor
+`Xi_OS^cont` from the resolved record `D_OS^op=Q_OS(Xi_OS^cont)`.  A legacy
+coframe survives exactly when it is constant on every descriptor fibre,
+locally `ker(D Xi_OS^cont) subseteq ker(e_L)`, so that
+`e_L=S_(L<-Xi) D Xi_OS^cont`.  Pulling the Lorentz metric through this solder
+preserves the corresponding proper-time and spatial-distance values.  For a
+hard quantizer, however, the new stable-cell partition must refine the legacy
+partition; smooth rank agreement is not enough.  This transports a calibrated
+clock/distance law if one has already been physically sourced.  It does not
+derive the quantizer, SI calibration, Nature occupation, or a parent proper
+time.
+
 The temporal terminal is one input to, not a substitute for, the global
 primitive-readout faithfulness test required to infer exact parent subsystem
 additivity.
@@ -315,6 +358,8 @@ the derivation of its clock row as the linear response of the observer clock,
 not as a fitted residual.
 
 ## Included Data
+
+- `data/derived/coframe_readout_migration_ledger.json`
 
 Only symbolic and finite-graph audit data are included.
 

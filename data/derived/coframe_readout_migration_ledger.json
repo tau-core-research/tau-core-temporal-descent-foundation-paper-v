@@ -1,0 +1,13 @@
+{
+  "schema": "tau-core-coframe-readout-migration-ledger-v1",
+  "continuous_descriptor": "Xi_OS^cont",
+  "operational_record": "D_OS^op=Q_OS(Xi_OS^cont)",
+  "smooth_coframe_migration": "ker(D Xi_OS^cont) subseteq ker(e_L)",
+  "coframe_factorization": "e_L=S_(L<-Xi) D Xi_OS^cont",
+  "pulled_metric": "eta_Xi=S_(L<-Xi)^* eta",
+  "proper_time_distance_preserved": "conditional_exact_identity",
+  "hard_quantizer_boundary": "new_partition_refines_legacy_partition",
+  "physical_calibration": "open",
+  "nature_occupation": "open",
+  "q_R_derivation": "not_claimed"
+}
