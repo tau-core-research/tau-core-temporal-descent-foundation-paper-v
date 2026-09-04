@@ -20,18 +20,29 @@ def test_required_files_exist():
 
 def test_claim_boundaries_and_markers():
     tex = (ROOT / "paperV_submission_source/main.tex").read_text()
-    assert "Temporal Descent from an Atemporal Morphological Body" in tex
+    assert "Temporal Descent from an Atemporal Morphological Response Configuration" in tex
     assert "Order-only no-go" in tex
     assert "Global synchronization criterion" in tex
     assert "Pathwise VEP clock" in tex
     assert "Localized complex-phase clock carrier" in tex
     assert "Future-orientation sign no-go" in tex
     assert "Conditional common clock--flow packet and two-sign no-go" in tex
+    assert "M4 metrological composition" in tex
+    assert "eq:m4-metrological-orbit" in tex
+    assert "same-output counterfamily" in tex
+    assert "CCOC--OGAS measure non-entailment" in tex
+    assert "Conditional common-line normalization" in tex
+    assert "eq:common-line-jacobian" in tex
     assert "Diagonal-orientation descent" in tex
     assert "Contact cotangent completeness, CTC-P1" in tex
     assert "Temporal MVP selection law" in tex
     assert "Observer-support temporal readout" in tex
     assert "Observer-support clock and comparison cocycle" in tex
+    assert "Observer-tick/proto-rate non-identifiability" in tex
+    assert "Multi-observer calibration rank" in tex
+    assert "Source-calibrated proto-rate completion" in tex
+    assert "source-calibrated-proto-rate" in tex
+    assert "dN_O\\over d\\rho" in tex
     assert "Scalar-clock criterion for extended support" in tex
     assert "Primitive-axis temporal factorization" in tex
     assert "J_T=\\widetilde J_T\\circ c_K" in tex
@@ -39,8 +50,14 @@ def test_claim_boundaries_and_markers():
     assert "Regular local GR limit and first variation" in tex
     assert "Pre-registered finite temporal discriminator" in tex
     assert "Time-distortion claim ladder" in tex
+    assert "Finite interventional simulation no-go" in tex
+    assert "atemporal simultaneous relation" in tex
     assert "present seed scalar cannot be renamed" in tex
     assert "CTC ownership in the temporal MVP" in tex
+    assert "Internal measurement backaction in the clock terminal" in tex
+    assert "eq:paperv-generalized-backaction" in tex
+    assert "eq:paperv-clock-backaction-split" in tex
+    assert "same observer context while clamping the target" in " ".join(tex.split())
     assert "observed Tau signal" not in tex
 
 def test_ledger():
@@ -69,6 +86,10 @@ def test_observer_support_readout_ledger():
     assert data["proved"]["multi_observer_rate_cocycle"] is True
     assert data["proved"]["scalar_clock_requires_rank_one_component_forms"] is True
     assert data["proved"]["temporal_parent_time_is_required"] is False
+    assert data["proved"]["pulled_back_stable_cell_count_is_reparameterization_invariant"] is True
+    assert data["proved"]["tick_intensity_identifies_parent_front_rate_without_independent_calibration"] is False
+    assert data["proved"]["arbitrarily_many_uncalibrated_observers_identify_parent_front_rate"] is False
+    assert data["proved"]["absolute_proto_rate_is_invariant_without_parent_scale_anchor"] is False
 
 def test_temporal_closure_ledger():
     data = json.loads((ROOT / "data/derived/temporal_closure_ledger.json").read_text())
@@ -84,3 +105,19 @@ def test_arxiv_archive_is_source_only():
     assert "main.tex" in names
     assert "figures/fig_temporal_descent_spine.pdf" in names
     assert "main.pdf" not in names
+
+
+def test_coframe_readout_migration_ledger():
+    data = json.loads(
+        (ROOT / "data/derived/coframe_readout_migration_ledger.json").read_text()
+    )
+    assert data["continuous_descriptor"] == "Xi_OS^cont"
+    assert data["operational_record"] == "D_OS^op=Q_OS(Xi_OS^cont)"
+    assert data["coframe_factorization"] == "e_L=S_(L<-Xi) D Xi_OS^cont"
+    assert data["proper_time_distance_preserved"] == "conditional_exact_identity"
+    assert data["hard_quantizer_boundary"] == "new_partition_refines_legacy_partition"
+    assert data["physical_calibration"] == "open"
+    tex = (ROOT / "paperV_submission_source/main.tex").read_text()
+    assert "eq:paperv-t4d-t62" in tex
+    assert "eq:paperv-t4d-c45" in tex
+    assert "eq:paperv-hard-quantizer-partition" in tex

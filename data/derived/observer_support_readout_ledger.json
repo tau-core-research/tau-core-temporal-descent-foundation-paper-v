@@ -2,21 +2,36 @@
   "schema": "tau-core-foundation-paper-v-observer-support-readout-v0.1",
   "common_readout_law": "Y_O^(a)=Q_O^(a) o T^(a) o A_O[M_tau]",
   "clock_law": "K_O=(A_O K_T^-1 A_O^*)^+; d_tau_O=T_* sqrt(<A_O dotM,K_O A_O dotM>)/epsilon_O d_chi",
+  "formation_tick_law": "dN_O/d_rho=nu_O(q_bar)*T_q(q_bar)*v_r(q_bar), T_q=(1-eta_A)/2, nu_O=dN_O/d(-q_bar)",
   "proved": {
     "observer_support_can_change_clock_rate": true,
     "multi_observer_rate_cocycle": true,
     "positive_reparameterization_invariance": true,
+    "pulled_back_stable_cell_count_is_reparameterization_invariant": true,
+    "tick_intensity_identifies_parent_front_rate_without_independent_calibration": false,
+    "arbitrarily_many_uncalibrated_observers_identify_parent_front_rate": false,
+    "absolute_proto_rate_is_invariant_without_parent_scale_anchor": false,
+    "source_calibrated_proto_rate_is_reparameterization_invariant": true,
+    "calibrated_order_proves_literal_parent_evolution": false,
+    "clock_mobility_product_is_reparameterization_invariant": true,
+    "calibrated_eocc_proves_literal_parent_evolution": false,
     "scalar_clock_requires_rank_one_component_forms": true,
     "temporal_parent_time_is_required": false
   },
   "conditional": {
     "body_clock_form": "source_frozen_positive_K_T",
     "observer_access": "occupied_source_frozen_A_O",
-    "temporal_quantizer": "stable_source_derived_Q_O_T"
+    "temporal_quantizer": "stable_source_derived_Q_O_T",
+    "parent_scale_form": "positive_source_owned_Theta_P_equals_kappa_P_d_rho"
   },
   "open": [
     "nature_level_selection_of_K_T_A_O_epsilon_O_Q_O_T",
     "absolute_SI_clock_calibration",
+    "independent_body_access_transmission_and_physical_quantizer_calibration",
+    "independent_parent_parameter_scale_or_reference_process",
+    "joint_source_occupation_of_registered_density_transmission_and_parent_scale_form",
+    "joint_source_occupation_of_parent_clock_form_and_eocc_physical_response_metric",
+    "source_owned_orbit_exclusion_rule_or_nonfactorizing_terminal",
     "nonzero_tau_over_standard_empirical_time_distortion"
   ],
   "claim_boundary": "conditional_observer_support_clock_theorem_not_empirical_time_distortion"
