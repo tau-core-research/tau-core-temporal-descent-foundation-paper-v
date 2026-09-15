@@ -323,6 +323,28 @@ multimode Choi orientation. A varying access projector can carry Kato mode
 transport without defining an absolute clock. Their common physical source is
 therefore an open richer-body question, not a consequence of either terminal.
 
+## Expansion-Conditioned Temporal Sign Theorem
+
+The inherited ECTR packet gives a new conditional bridge from source-frozen
+access to observer-clock expansion. For the Q leg
+`F_Q(a)=(I+a^2G)^-1/2`, define
+`Gamma=-d_(tau_O) log det F_Q` and
+`E_Q=-partial_(log a) log det F_Q`. If one source owns the positive R1 access
+ray, the dual spectral lock and the metric-active coframe scale, then
+`H_O=Gamma/E_Q>0`. Zero access gives the exact static control.
+
+Metric expansion and terminal weighting are therefore common-source
+co-descendants. The observed scale factor can modulate their relative
+dominance inside the frozen law, but it cannot select the source operator,
+quantizer or terminal types.
+
+This does not turn R1 access into Parent time. The access depth is an
+atemporal path integral on the frozen channel; the derivative is taken only
+after a positive observer-clock calibration. The sign is common only for
+compatible comoving observers on one oriented globally hyperbolic leaf. The
+theorem neither forces every Tau universe to expand nor derives acceleration,
+dark energy, `H(z)` or our universe's upstream class membership.
+
 ## Does Not Claim
 
 The manuscript now distinguishes the smooth common descriptor
@@ -407,3 +429,23 @@ python .tau-core-kb/scripts/tc_kb.py pack big_picture
 not make the atemporal Parent a trajectory. Time remains an associated
 observer-relative terminal readout. `PD-USS-N1` and the `0/31` public census
 leave temporal actuality and any nonstandard clock signal open.
+
+<!-- BEGIN OBSERVER UPDATE 20260914 -->
+## Observer realization update (2026-09-14)
+
+The supplied oscillator clock and energy conversion are downstream premises. Neither a covariance nor ground-state minimization derives observer time or turns the atemporal parent into a dynamical memory.
+
+The manuscript distinguishes inherited BRAC contact, conditional coherent-state
+selection and interacting local covariance from physical observer identification,
+preparation and stable resolution. Those physical claims remain open. No
+empirical score was changed. The [dependency and source-result ledger](data/derived/observer_update_2026_09_14.json) records the assumptions and controls.
+<!-- END OBSERVER UPDATE 20260914 -->
+
+<!-- BEGIN LAB UPDATE 20260915 -->
+## Finite lab integration (2026-09-15)
+
+The manuscript imports the scope-specific source, body, observer or terminal
+result from the current lab. Supplied priors, conditional recovery and physical
+selection remain separate. No SI constant, viable universe or Tau-specific
+signal is newly established. See the [source and ownership ledger](data/derived/lab_update_2026_09_15.json).
+<!-- END LAB UPDATE 20260915 -->

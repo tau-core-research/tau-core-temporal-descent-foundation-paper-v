@@ -121,3 +121,11 @@ def test_coframe_readout_migration_ledger():
     assert "eq:paperv-t4d-t62" in tex
     assert "eq:paperv-t4d-c45" in tex
     assert "eq:paperv-hard-quantizer-partition" in tex
+
+
+def test_ectr_temporal_sign_theorem_is_conditional():
+    tex = (ROOT / "paperV_submission_source/main.tex").read_text()
+    assert "Access loss, scale elasticity, and conditional expansion" in tex
+    assert "eq:paperv-ectr-access" in tex
+    assert "eq:paperv-ectr-classifier" in tex
+    assert "neither universal expansion nor our universe's membership" in tex

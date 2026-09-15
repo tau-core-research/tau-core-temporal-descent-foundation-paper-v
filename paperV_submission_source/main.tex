@@ -2130,6 +2130,114 @@ therefore supports the distinction between Parent structure and observer
 time, but it neither proves a temporal Parent nor supplies an absolute
 proto-time rate.
 
+\section{Access loss, scale elasticity, and conditional expansion}
+
+The ECTR packet adds a typed sign theorem to the temporal descent without
+introducing a literal Parent clock.  Let the positive additive R1 access
+coordinate on a source-frozen channel segment be
+\begin{equation}
+ u(\sigma)=\int_{\Gamma_{[\sigma_0,\sigma]}}\eta_\tau,
+ \qquad s=\lambda_u u,\quad \lambda_u\geq0.
+ \label{eq:paperv-ectr-access}
+\end{equation}
+The integral is a simultaneous channel invariant.  Only after pullback to a
+positively calibrated observer clock $\tau_O$ do $\dot u$ and a rate acquire
+their operational meaning.
+
+Assume one source-owned co-registration makes the Q filter and metric-active
+coframe scale descendants of the same positive operator $G$,
+\begin{equation}
+ F_{Q,O}(a)=(I+a^2G)^{-1/2},
+ \qquad e_{a,M}=ae_{0,M}.
+ \label{eq:paperv-ectr-lock}
+\end{equation}
+Define the determinant loss and scale elasticity by
+\begin{align}
+ \Gamma_{U,O}&=-{d\over d\tau_O}\log\det F_{Q,O}(a_O),\\
+ \mathcal E_Q(a)&=-\partial_{\log a}\log\det F_{Q,O}(a)
+ =a^2\operatorname{tr}[G(I+a^2G)^{-1}]>0.
+ \label{eq:paperv-ectr-elasticity}
+\end{align}
+The chain rule then gives the exact classifier
+\begin{equation}
+ \boxed{H_O={\dot a_O\over a_O}
+ ={\Gamma_{U,O}\over\mathcal E_Q(a_O)}.}
+ \label{eq:paperv-ectr-classifier}
+\end{equation}
+This formula is a conditional modulation law, not a downstream source law.
+The same frozen source packet supplies both the metric-active scale and the
+Q--metric access relation; measured $a_O$ does not select the operator,
+quantizer or terminal semantics from which the relation was derived.
+For a positive nonzero occupied R1 access rate, the normalized
+Legendre--Riesz completion makes $\Gamma_{U,O}>0$ and hence $H_O>0$.  If the
+access rate vanishes, Eq.~\eqref{eq:paperv-ectr-classifier} gives the static
+control.  Without the common metric lock, access growth or fixed-geometry
+coarse graining gives no expansion statement.
+
+The theorem classifies occupied observer--source contexts rather than all
+possible worlds.  A Q--metric lock with positive loss is expanding, a regular
+zero-loss lock is static, a complementary-leg lock may have the opposite
+sign, and an unlocked context is unclassified.  On a connected oriented,
+time-oriented globally hyperbolic leaf, compatible comoving observers with
+positive clock changes share the sign, although their numerical rates may
+differ.  Bound, accelerated and tilted observers are not covered.  Therefore
+neither universal expansion nor our universe's membership in the expanding
+class follows from the present source law; inferring membership from measured
+$H_O>0$ would be circular.  Acceleration, dark energy and a concrete $H(z)$
+remain separate dynamical and empirical questions.
+
+% BEGIN OBSERVER UPDATE 20260914
+\section{Observer realization: inherited results and physical boundary}
+\label{sec:observer-update-20260914}
+The current observer programme distinguishes a conditional mathematical
+construction from an occupied physical measuring system. The source order
+remains base plus one universal seed, stabilized morphological response,
+observer--source restriction, shared descriptor, and resolved terminal
+readouts. Neither a detector nor an empirical residual constructs the parent
+body backwards. Dynamics below concern downstream subsystems only.
+
+The canonical observer-origin derivation, Sections 22--26, owns the following
+results. The existing joint source action fixes static and frequency-dependent
+response together. Variation of the BRAC potential couples to the field
+square; a linear field coupling is a distinct comparator unless derived by
+expansion about an occupied background. Fixed canonical means select a unique
+coherent state in a finite positive harmonic packet only if there is no excess
+fluctuation energy. This is a free/asymptotic preparation statement, not the
+ground state of an interacting detector. For the existing coupled harmonic
+pair, the joint ground is pure but either local subsystem is mixed, with its
+covariance fixed by the complete joint Hamiltonian.
+
+These are conditional derivations and internal numerical checks. The actual
+observer--source context, physical preparation process, kinetic/energy
+calibration and stable operational resolution remain unproved. The existing
+ORA-T1 selector conditionally chooses stable quantizers when the occupied
+context, admissible partition family and positive closure barrier are supplied;
+it does not establish those physical premises. A computed ground state is not
+a preparation mechanism, and a covariance or optimal abstract measurement is
+not an implemented stable quantizer $Q_{OS}$.
+
+\paragraph{Ownership and use.}
+The central observer-origin note owns the new contact, state and covariance
+derivations; the body-readout technical companion carries the consolidated
+mathematics. Foundation Papers IV, V and VI retain physical-selection,
+clock-descent and quantum-readout ownership, respectively. This paper imports
+only the consequences within its scope. No observational dataset, baseline,
+frozen coefficient, score or empirical conclusion is revised by this update.
+The reproducibility supplement records the source hashes and the exact
+conditional/physical distinction.
+
+
+\paragraph{Consequence for this paper.}
+The supplied oscillator clock and energy conversion are downstream premises. Neither a covariance nor ground-state minimization derives observer time or turns the atemporal parent into a dynamical memory.
+% END OBSERVER UPDATE 20260914
+
+% BEGIN LAB UPDATE 20260915
+\section{Finite source-to-readout implementation and its scope}
+The current finite laboratory is a reproducible implementation, not a new Nature-selection theorem. Genetic generations are computational search indices, not Parent occurrence or observer time. The propagation example supplies its readout-time chart and kinetic law independently. Neither its unit chart speed nor a finite acceptance cell establishes a universal time atom, physical clock calibration or temporal Nature occupation.
+\paragraph{Ownership and reproducibility.}
+The seed--body companion owns the finite minimum/Hessian example, the body--readout companion its ordered access and contact reduction, and the terminal companion its conditional propagation boundary. The physical-source papers retain the source-selection obligation. Code, declared priors, adverse controls and provenance are available at \url{https://github.com/tau-core-research/tau-core-theory/tree/main/experiments/seed_evolution_lab}. Numerical tests are internal evidence only; no published empirical score is changed.
+% END LAB UPDATE 20260915
+
 \section{Conclusion}
 
 The common-terminal analysis adds a limitation to the temporal result. Even a
@@ -2206,6 +2314,7 @@ changes this conclusion: one common source character may calibrate clock/phase
 and particle sectors while their terminal laws remain typed and
 noninterchangeable. Particle-scale calibration is therefore not evidence for
 observer clock distortion or for physical occupation of the temporal branch.
+
 
 \bibliographystyle{unsrt}
 \bibliography{refs}
