@@ -449,3 +449,11 @@ result from the current lab. Supplied priors, conditional recovery and physical
 selection remain separate. No SI constant, viable universe or Tau-specific
 signal is newly established. See the [source and ownership ledger](data/derived/lab_update_2026_09_15.json).
 <!-- END LAB UPDATE 20260915 -->
+
+## Foundations blocker audit import (2026-11-12)
+
+The manuscript now imports the `F16--F20` foundations blocker audit results from Technical Companions TD-I through TD-III: Theorem `F18-T1` and `OCSR-H1` (reversing the mode-0 clock covector from `ell_{H,0}^{D1} = +0.028197 > 0` to `ell_{H,0}^{OCSR} = -1.00786854 < 0` on the coercive once-counted branch vs `PDSS-C1` and `D1`), Theorems `F17-T1` and `F17-T2` with `SMSD-H1` (disjoint stage-relaxation bands with gap `0.52188905 Gamma_0` under `G_slot = A_tau (I_4 (+) I_6)` vs `IGM-H1`), `F16`/`F19` with `COCA-H1` (parameter-free `S_4`-singlet parent ratios satisfying `LG-ALPHACURV1` `d alpha_O = dm / m_bg != 0`, opposite core clock shifts on `OCSR-H1` vs `D1`, and IR-finite ray integral `K_0(m_eff b)/(2 pi)`), and Theorem `F20-T1` (exact `tau`- and `A_tau`-invariance of operational differential clock ratios, with `ZSNT-H1a` vs `ABNT-H1b` for raw norms). Unrestricted `old-bare Tau` branch selection, SI anchors (`Gamma_0`, `ell_tau`, `delta_eta <-> GM/c^2`), and blind solar-conjunction validation remain open.
+
+## Three-pillar closure and postulate-reduction update (2026-11-14)
+
+Foundation Paper V (`paperV_submission_source/main.tex`) integrates Theorem `F2` (connection-free exterior derivative `dK = -r(2H^2 + H_dot) dt ^ dr` on the Painleve--Gullstrand Kodama 1-form uniquely deriving `|kappa_KH(z)| = c H(z) |1 - (3/4) Omega_m(z)|` and `a_0(z) = (5 sqrt(3)/48) c H(z) |1 - (3/4) Omega_m(z)|` while `CHH-Kin` violates `d^2 = 0`, plus finite-core disk holonomy regularity), Theorem `U2` (`0.00e+00` UV-invariance of intensive KMS period `beta_KMS` and `eta_hor = 1`), `COV-DIR C1` (`SO(2)` spatial-triad gauge redundancy), and `V19`-locked ratios (`m_bg = 0.52320998`, `m_eff = 2.12054781`; `NATURE_LEVEL_CLOSURE = false`).
